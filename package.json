@@ -14,7 +14,10 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0"
+    "date-fns": "^1.30.1",
+    "hh-mm-ss": "^1.2.0",
+    "nuxt": "^2.4.0",
+    "vue-timers": "^2.0.2"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
