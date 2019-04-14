@@ -1,67 +1,58 @@
 <template>
   <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        hackaru-official
-      </h1>
-      <h2 class="subtitle">
-        Hackaru official website
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
-    </div>
+    <header>
+      <nav>
+        <img class="logo" src="~assets/logo.svg" />
+        <ul class="menu">
+          <li>新規登録</li>
+          <li class="button">ログイン</li>
+        </ul>
+      </nav>
+    </header>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
+body {
+  font-family: -apple-system, sans-serif;
+  font-size: 14px;
+}
+header {
   display: flex;
   justify-content: center;
+  padding: 15px 20px;
+  background-color: #3f4961;
+}
+header nav {
+  display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+header .logo {
+  width: 20px;
+  height: 20px;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
-
-.links {
-  padding-top: 15px;
+.menu li {
+  padding: 0 30px;
+}
+.menu .button {
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: #fff;
+  font-weight: bold;
+  color: #3f4961;
 }
 </style>
