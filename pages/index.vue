@@ -20,13 +20,13 @@
         <p>
           スマートフォンから、パソコンから。<br />全て無料で簡単に計測できます。
         </p>
-        <button class="sign-up" type="button">アカウント登録</button>
+        <button class="sign-up btn-shadow" type="button">アカウント登録</button>
       </div>
       <div class="smart-phone">
         <div class="activity">
           <div class="activity-content">
             <span class="dot" />
-            開発
+            お仕事
           </div>
           <ticker class="duration" />
         </div>
@@ -34,8 +34,90 @@
       <img class="header-background" src="~assets/header.png" />
     </div>
     <section class="content">
-      aaa
+      <article class="howto">
+        <img src="~assets/lets-tracking.png" class="lets-tracking" />
+        <div class="text">
+          <h1>有意義な時間を、<br />計測しよう。</h1>
+          <p>
+            勉強、執筆、プログラミング、イラスト制作など、<br />
+            あなたの有意義な時間を計測しよう。<br />
+            ボタンを押すだけで簡単に。
+          </p>
+        </div>
+      </article>
+      <article class="howto">
+        <div class="text">
+          <h1>時間を振り返ろう。</h1>
+          <p>
+            あなたの頑張った時間を振り返ろう。<br />
+            カレンダーやグラフで、<br />
+            分かりやすく視覚的に。
+          </p>
+        </div>
+        <img src="~assets/feedbacks.png" class="feedbacks" />
+      </article>
+      <article class="howto">
+        <img src="~assets/auto-tracking.png" class="auto-tracking" />
+        <div class="text">
+          <h1>あなたの代わりに<br />自動で計測。</h1>
+          <p>
+            プログラミング用のエディタを開く。<br />
+            イラスト制作ソフトを開く。<br />
+            <a
+              href="https://github.com/ktmouk/hackaru-desktop/blob/master/README.ja.md"
+              target="_blank"
+              rel="noopener"
+              >Hackaru for Desktop</a
+            >
+            と合わせて使えば、<br />
+            アプリの使用時間を元に、<br />
+            自動で時間を計測します。
+          </p>
+        </div>
+      </article>
+      <article class="howto">
+        <div class="text">
+          <h1>スマホで使うのも、<br />一瞬で。</h1>
+          <p>
+            PWAに対応しているから、<br />
+            アプリストアからダウンロードする<br />
+            必要はありません。<br />
+            ホーム画面に追加するだけで、<br />
+            iPhoneでもAndroidでも、<br />
+            滑らかに使えます。
+          </p>
+        </div>
+        <img src="~assets/pwa.png" class="pwa" />
+      </article>
+      <article class="howto">
+        <img src="~assets/open-source.png" class="open-source" />
+        <div class="text">
+          <h1>全てがオープンソース。</h1>
+          <p>
+            オープンソースだから、<br />
+            あなたの自宅のパソコンでも、<br />
+            会社のプライベートなネットワークでも。<br />
+            自由に、どこでも構築できます。
+          </p>
+        </div>
+      </article>
     </section>
+    <footer class="footer">
+      <div class="good">
+        「われわれは時間を道具のように使わねばいけない。すがりつく松葉杖としてではなく。」
+        - John F. Kennedy
+      </div>
+      <h1>時間の管理を始めよう</h1>
+      <button class="footer-sign-up" type="button">アカウント登録</button>
+      <div class="footer-links">
+        <ul>
+          <li>利用規約</li>
+          <li>プライバシーポリシー</li>
+          <li>開発者のTwitter</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+    </footer>
   </section>
 </template>
 
@@ -61,6 +143,9 @@ body {
   font-size: 14px;
   background-color: #f5f5f5;
 }
+body a {
+  color: #2daec4;
+}
 header h1 {
   color: #000;
   display: flex;
@@ -69,6 +154,46 @@ header h1 {
 }
 h1 img {
   margin-right: 10px;
+}
+.lets-tracking {
+  width: 480px;
+}
+.auto-tracking {
+  width: 540px;
+}
+.feedbacks {
+  width: 660px;
+  margin-right: 50px;
+  margin-top: -130px;
+}
+.pwa {
+  width: 600px;
+  margin-right: 50px;
+}
+.open-source {
+  width: 300px;
+}
+.howto {
+  margin-bottom: 30px;
+  padding: 100px 0;
+  display: flex;
+  border-bottom: 1px #f5f5f5 solid;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.text {
+  margin: 0 50px;
+}
+.text h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
 }
 .junbotron {
   width: 100%;
@@ -86,7 +211,7 @@ h1 img {
   border-radius: 50%;
   width: 8px;
   height: 8px;
-  background-color: #7da87b;
+  background-color: #eb4f34;
   margin-right: 10px;
 }
 .marker {
@@ -95,7 +220,7 @@ h1 img {
   margin-left: -10px;
 }
 .welcome {
-  font-size: 38px;
+  font-size: 42px;
   font-weight: normal;
   color: #000;
   margin-bottom: 20px;
@@ -118,13 +243,22 @@ h1 img {
   padding: 16px 0;
   width: 200px;
   margin-top: 40px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
   background-color: #eb4f34;
-  box-shadow: 0 5px 0 #c8c9b755;
   font-weight: normal;
+}
+.sign-up.btn-shadow {
+  box-shadow: 0 5px 0 #c8c9b755;
+}
+.good {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: #fff;
+  padding: 30px 0;
+  font-size: 16px;
+  background-color: #2e3647;
 }
 .header-background {
   height: 560px;
@@ -204,10 +338,53 @@ header .logo {
   color: #fff;
 }
 .content {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 100%;
   background-color: #fff;
-  height: 500px;
   z-index: 200;
+}
+.footer {
+  text-align: center;
+  background-color: #3f4961;
+}
+.footer-sign-up {
+  border: 0;
+  padding: 16px 0;
+  width: 200px;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: normal;
+  background-color: #eb4f34;
+}
+.footer h1 {
+  font-size: 36px;
+  padding-top: 100px;
+  font-weight: normal;
+  color: #fff;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 20px 0;
+  padding-bottom: 25px;
+}
+.footer-links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  color: #fff;
+  padding: 0 10px;
+  border-right: 1px #2e3647 solid;
+}
+.footer-links li:last-child {
+  border-right: none;
 }
 </style>
