@@ -1,42 +1,45 @@
 <template>
   <section class="container">
-    <header>
+    <header class="header">
       <nav>
-        <h1 class="title" href="#">
-          <img class="logo" src="~assets/logo.svg" />
-          Hackaru
-        </h1>
-        <ul class="menu">
-          <li class="button">ログイン</li>
-        </ul>
+        <a href="./">
+          <h1 class="title">
+            <img src="~assets/logo.svg" />
+            Hackaru
+          </h1>
+        </a>
+        <a class="login-btn" href="https://app.hackaru.app">ログイン</a>
       </nav>
     </header>
-    <div class="junbotron">
-      <div class="message">
-        <h1 class="welcome">
+
+    <section class="jumbotron">
+      <div class="jumbotron-content">
+        <h1>
           あなたの<br /><span class="marker">大切な時間</span
-          >を<br />管理しよう。
+          >を<br />管理しよう
         </h1>
         <p>
-          スマートフォンから、パソコンから。<br />全て無料で簡単に計測できます。
+          スマホから、パソコンから、<br />全て無料で簡単に計測できます
         </p>
-        <button class="sign-up btn-shadow" type="button">アカウント登録</button>
+        <a class="sign-up-btn" href="https://app.hackaru.app">アカウント登録</a>
       </div>
-      <div class="smart-phone">
-        <div class="activity">
-          <div class="activity-content">
-            <span class="dot" />
-            お仕事
+      <div class="desktop">
+        <div class="iphone">
+          <div class="activity">
+            <div class="activity-content">
+              <span class="dot" />
+              開発
+            </div>
+            <ticker class="duration" />
           </div>
-          <ticker class="duration" />
         </div>
       </div>
-      <img class="header-background" src="~assets/header.png" />
-    </div>
-    <section class="content">
-      <article class="howto">
-        <img src="~assets/lets-tracking.png" class="lets-tracking" />
-        <div class="text">
+    </section>
+
+    <section class="features">
+      <article class="feature">
+        <img src="~assets/feature-tracking.png" />
+        <div>
           <h1>有意義な時間を、<br />計測しよう。</h1>
           <p>
             勉強、執筆、プログラミング、イラスト制作など、<br />
@@ -45,8 +48,8 @@
           </p>
         </div>
       </article>
-      <article class="howto">
-        <div class="text">
+      <article class="feature">
+        <div>
           <h1>時間を振り返ろう。</h1>
           <p>
             あなたの頑張った時間を振り返ろう。<br />
@@ -54,11 +57,11 @@
             分かりやすく視覚的に。
           </p>
         </div>
-        <img src="~assets/feedbacks.png" class="feedbacks" />
+        <img src="~assets/feature-feedbacks.png" />
       </article>
-      <article class="howto">
-        <img src="~assets/auto-tracking.png" class="auto-tracking" />
-        <div class="text">
+      <article class="feature">
+        <img src="~assets/feature-auto-tracking.png" />
+        <div>
           <h1>あなたの代わりに<br />自動で計測。</h1>
           <p>
             プログラミング用のエディタを開く。<br />
@@ -75,8 +78,8 @@
           </p>
         </div>
       </article>
-      <article class="howto">
-        <div class="text">
+      <article class="feature">
+        <div>
           <h1>スマホで使うのも、<br />一瞬で。</h1>
           <p>
             PWAに対応しているから、<br />
@@ -87,11 +90,11 @@
             滑らかに使えます。
           </p>
         </div>
-        <img src="~assets/pwa.png" class="pwa" />
+        <img src="~assets/feature-pwa.png" />
       </article>
-      <article class="howto">
-        <img src="~assets/open-source.png" class="open-source" />
-        <div class="text">
+      <article class="feature no-border">
+        <img src="~assets/feature-open-source.png" />
+        <div>
           <h1>全てがオープンソース。</h1>
           <p>
             オープンソースだから、<br />
@@ -101,23 +104,24 @@
           </p>
         </div>
       </article>
+
+      <footer class="footer">
+        <div class="i-think-too">
+          「われわれは時間を道具のように使わねばいけない。すがりつく松葉杖としてではなく。」
+          - John F. Kennedy
+        </div>
+        <h1>時間の管理を始めよう</h1>
+        <button class="footer-sign-up" type="button">アカウント登録</button>
+        <div class="footer-links">
+          <ul>
+            <li>利用規約</li>
+            <li>プライバシーポリシー</li>
+            <li>開発者のTwitter</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </footer>
     </section>
-    <footer class="footer">
-      <div class="good">
-        「われわれは時間を道具のように使わねばいけない。すがりつく松葉杖としてではなく。」
-        - John F. Kennedy
-      </div>
-      <h1>時間の管理を始めよう</h1>
-      <button class="footer-sign-up" type="button">アカウント登録</button>
-      <div class="footer-links">
-        <ul>
-          <li>利用規約</li>
-          <li>プライバシーポリシー</li>
-          <li>開発者のTwitter</li>
-          <li>GitHub</li>
-        </ul>
-      </div>
-    </footer>
   </section>
 </template>
 
@@ -146,99 +150,82 @@ body {
 body a {
   color: #2daec4;
 }
-header h1 {
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0 3px 3px #00000020;
+  opacity: 0.98;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+.header nav a {
+  text-decoration: none;
+}
+.title {
   color: #000;
   display: flex;
   align-items: center;
   font-weight: normal;
 }
-h1 img {
+.title img {
+  width: 20px;
+  height: 20px;
   margin-right: 10px;
 }
-.lets-tracking {
-  width: 480px;
+.login-btn {
+  display: block;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: #2daec4;
+  color: #fff;
+  cursor: pointer;
 }
-.auto-tracking {
-  width: 540px;
-}
-.feedbacks {
-  width: 660px;
-  margin-right: 50px;
-  margin-top: -130px;
-}
-.pwa {
-  width: 600px;
-  margin-right: 50px;
-}
-.open-source {
-  width: 300px;
-}
-.howto {
-  margin-bottom: 30px;
-  padding: 100px 0;
+
+.jumbotron {
+  background-color: #eeefe1;
+  font-size: 18px;
   display: flex;
-  border-bottom: 1px #f5f5f5 solid;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-.text {
-  margin: 0 50px;
-}
-.text h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-.text p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
-}
-.junbotron {
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  box-shadow: 0 3px 3px #00000020;
   align-items: center;
-  background-color: #e6e8d3;
-  box-shadow: 0 -5px 0 #c8c9b720 inset;
-  background-image: url('~assets/header-background.png');
-  background-size: 15%;
-  background-repeat: repeat;
 }
-.dot {
-  display: flex;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: #eb4f34;
-  margin-right: 10px;
-}
-.marker {
-  background-color: #ffe9b3;
-  padding: 0 10px;
-  margin-left: -10px;
-}
-.welcome {
+.jumbotron h1 {
   font-size: 42px;
   font-weight: normal;
   color: #000;
   margin-bottom: 20px;
 }
-.junbotron {
-  display: flex;
+.jumbotron h1 .marker {
+  background-color: #ffe9b3;
+  padding: 0 10px;
+  margin-left: -10px;
 }
-.login {
-  font-size: 15px;
+.jumbotron-desktop {
+  height: 560px;
+}
+.jumbotron-content {
+  flex-shrink: 0;
+  width: 350px;
   margin-top: 30px;
+  margin-left: 120px;
+  justify-content: flex-start;
 }
-.message {
+.sign-up-btn {
   display: flex;
-  flex-direction: column;
-  padding: 20px 50px;
-  font-size: 18px;
-}
-.sign-up {
+  justify-content: center;
+  text-decoration: none;
   border: 0;
   padding: 16px 0;
   width: 200px;
@@ -250,32 +237,31 @@ h1 img {
   background-color: #eb4f34;
   font-weight: normal;
 }
-.sign-up.btn-shadow {
-  box-shadow: 0 5px 0 #c8c9b755;
-}
-.good {
-  font-family: 'Sawarabi Mincho', sans-serif;
-  color: #fff;
-  padding: 30px 0;
-  font-size: 16px;
-  background-color: #2e3647;
-}
-.header-background {
+
+.desktop {
+  display: flex;
+  width: 100%;
   height: 560px;
-}
-.smart-phone {
-  position: absolute;
-  width: 400px;
-  right: 480px;
-  bottom: 150px;
-  background-image: url('~assets/smart-phone.png');
-  background-size: 400px;
+  background-image: url('~assets/jumbotron-desktop.png');
+  background-size: cover;
+  background-position: left;
   background-repeat: no-repeat;
+}
+.iphone {
+  display: flex;
+  background-image: url('~assets/jumbotron-iphone.png');
+  background-position: bottom left;
+  align-items: flex-end;
+  background-size: 270px;
+  align-self: flex-end;
+  background-repeat: no-repeat;
+  min-width: 280px;
+  padding-left: 20px;
   height: 500px;
+  margin-left: 8%;
 }
 .activity {
   display: flex;
-  align-items: center;
   border: 1px #f5f5f5 solid;
   border-left: 0;
   border-right: 0;
@@ -283,10 +269,17 @@ h1 img {
   padding-right: 20px;
   font-size: 13px;
   color: #000;
-  margin-left: 90px;
+  margin-bottom: 205px;
   width: 232px;
-  margin-top: 150px;
   z-index: 101;
+}
+.activity-content .dot {
+  display: flex;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #7da87b;
+  margin-right: 10px;
 }
 .activity-content {
   display: flex;
@@ -297,57 +290,63 @@ h1 img {
   font-family: 'Arial', sans-serif;
   color: #3f4961;
 }
-header {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  justify-content: center;
-  padding: 15px 20px;
-  background-color: #fff;
-  z-index: 999;
-  box-shadow: 0 3px 3px #00000020;
-  opacity: 0.98;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 800px;
-}
-header .logo {
-  width: 20px;
-  height: 20px;
-}
-.menu {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-.menu li {
-  padding: 0 30px;
-  color: #3f4961;
-}
-.menu .button {
-  border: 0;
-  padding: 10px 15px;
-  border-radius: 3px;
-  background-color: #2daec4;
-  font-weight: normal;
-  color: #fff;
-}
-.content {
+
+.features {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
   background-color: #fff;
   z-index: 200;
+  align-items: center;
 }
+.feature {
+  margin-bottom: 30px;
+  padding: 100px 0;
+  display: flex;
+  border-bottom: 1px #f5f5f5 solid;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.feature.no-border {
+  border-bottom: 0;
+}
+.feature {
+  margin: 0 50px;
+}
+.feature h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.feature p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+.feature img {
+  margin: 0 40px;
+  width: 480px;
+}
+
 .footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 50px;
   background-color: #3f4961;
+}
+.i-think-too {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: #fff;
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  background-color: #2e3647;
 }
 .footer-sign-up {
   border: 0;
@@ -368,11 +367,7 @@ header .logo {
   color: #fff;
 }
 .footer-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  padding: 20px 0;
-  padding-bottom: 25px;
+  padding: 50px 0;
 }
 .footer-links ul {
   display: flex;
@@ -386,5 +381,70 @@ header .logo {
 }
 .footer-links li:last-child {
   border-right: none;
+}
+
+/** iPad **/
+@media screen and (max-width: 1024px) {
+  .jumbotron-content {
+    margin-left: 0;
+    padding-left: 40px;
+  }
+}
+
+/** iPhone **/
+@media screen and (max-width: 640px) {
+  .jumbotron {
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding-top: 130px;
+  }
+  .jumbotron-content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+  .jumbotron h1 .marker {
+    background-color: #ffe9b3;
+    padding: 0;
+    margin-left: 0;
+  }
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+  .sign-up-btn {
+    display: flex;
+    align-self: center;
+  }
+  .desktop {
+    background-image: none;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .iphone {
+    display: flex;
+    height: 450px;
+    margin: 0;
+    margin-left: 10px;
+  }
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .feature img {
+    order: 2;
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 </style>
