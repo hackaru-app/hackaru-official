@@ -8,7 +8,12 @@
             Hackaru <span>ハカル</span>
           </h1>
         </a>
-        <a class="login-btn" href="https://app.hackaru.app/login">ログイン</a>
+        <a
+          class="login-btn"
+          href="https://app.hackaru.app/login"
+          @click="$ga.event('login', 'login')"
+          >ログイン</a
+        >
       </nav>
     </header>
 
@@ -18,7 +23,10 @@
           あなたの<br /><span class="marker">大切な時間</span>を<br />管理しよう
         </h1>
         <p>スマホから、パソコンから、<br />全て無料で簡単に計測できます</p>
-        <a class="sign-up-btn" href="https://app.hackaru.app/sign-up"
+        <a
+          class="sign-up-btn"
+          href="https://app.hackaru.app/sign-up"
+          @click="$ga.event('signUp', 'top')"
           >アカウント登録</a
         >
       </div>
@@ -69,6 +77,7 @@
               href="https://github.com/ktmouk/hackaru-desktop/blob/master/README.ja.md"
               target="_blank"
               rel="noopener"
+              @click="$ga.event('links', 'for-desktop')"
               >Hackaru for Desktop</a
             >
             と合わせて使えば、<br />
@@ -110,7 +119,10 @@
           - John F. Kennedy
         </div>
         <h1>時間の管理を始めよう</h1>
-        <a class="footer-sign-up" href="https://app.hackaru.app/sign-up"
+        <a
+          class="footer-sign-up"
+          href="https://app.hackaru.app/sign-up"
+          @click="$ga.event('signUp', 'bottom')"
           >アカウント登録</a
         >
         <div class="footer-links">
@@ -120,6 +132,7 @@
                 href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md"
                 target="_blank"
                 rel="noopener"
+                @click="$ga.event('links', 'terms')"
                 >利用規約</a
               >
             </li>
@@ -128,6 +141,7 @@
                 href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md"
                 target="_blank"
                 rel="noopener"
+                @click="$ga.event('links', 'policy')"
                 >プライバシーポリシー</a
               >
             </li>
@@ -136,6 +150,7 @@
                 href="https://twitter.com/ktmouk"
                 target="_blank"
                 rel="noopener"
+                @click="$ga.event('links', 'twitter')"
                 >開発者のTwitter</a
               >
             </li>
@@ -144,10 +159,15 @@
                 href="https://github.com/ktmouk/hackaru"
                 target="_blank"
                 rel="noopener"
+                @click="$ga.event('links', 'github')"
                 >GitHub</a
               >
             </li>
           </ul>
+          <p class="ga"><a
+          target="_blank"
+          rel="noopener"
+          href="https://policies.google.com/technologies/partner-sites">このサイトではアクセス解析に GoogleAnalytics を利用しています。</a></p>
         </div>
       </footer>
     </section>
@@ -449,6 +469,13 @@ body a {
 .footer-links li:last-child {
   border-right: none;
 }
+.ga {
+  margin-top: 60px;
+}
+.ga a {
+  color: #cdd0d1;
+  text-decoration: none;
+}
 
 /** iPad **/
 @media screen and (max-width: 1024px) {
@@ -531,6 +558,10 @@ body a {
   }
   .footer-links li:last-child {
     border-right: none;
+  }
+  .ga {
+    margin: 0 30px;
+    margin-top: 50px;
   }
 }
 </style>
