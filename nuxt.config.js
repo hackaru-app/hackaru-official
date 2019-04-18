@@ -7,7 +7,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: 'Hackaru (測る) - 時間の管理を始めよう。',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -40,7 +40,11 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/google-analytics'],
+
+  googleAnalytics: {
+    id: 'UA-137391422-4'
+  },
 
   /*
    ** Build configuration

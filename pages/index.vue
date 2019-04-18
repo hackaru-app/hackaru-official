@@ -5,23 +5,22 @@
         <a href="./">
           <h1 class="title">
             <img src="~assets/logo.svg" />
-            Hackaru
+            Hackaru <span>ハカル</span>
           </h1>
         </a>
-        <a class="login-btn" href="https://app.hackaru.app">ログイン</a>
+        <a class="login-btn" href="https://app.hackaru.app/login">ログイン</a>
       </nav>
     </header>
 
     <section class="jumbotron">
       <div class="jumbotron-content">
         <h1>
-          あなたの<br /><span class="marker">大切な時間</span
-          >を<br />管理しよう
+          あなたの<br /><span class="marker">大切な時間</span>を<br />管理しよう
         </h1>
-        <p>
-          スマホから、パソコンから、<br />全て無料で簡単に計測できます
-        </p>
-        <a class="sign-up-btn" href="https://app.hackaru.app">アカウント登録</a>
+        <p>スマホから、パソコンから、<br />全て無料で簡単に計測できます</p>
+        <a class="sign-up-btn" href="https://app.hackaru.app/sign-up"
+          >アカウント登録</a
+        >
       </div>
       <div class="desktop">
         <div class="iphone">
@@ -40,7 +39,7 @@
       <article class="feature">
         <img src="~assets/feature-tracking.png" />
         <div>
-          <h1>有意義な時間を、<br />計測しよう。</h1>
+          <h1>有意義な時間を<br />計測しよう。</h1>
           <p>
             勉強、執筆、プログラミング、イラスト制作など、<br />
             あなたの有意義な時間を計測しよう。<br />
@@ -111,13 +110,43 @@
           - John F. Kennedy
         </div>
         <h1>時間の管理を始めよう</h1>
-        <button class="footer-sign-up" type="button">アカウント登録</button>
+        <a class="footer-sign-up" href="https://app.hackaru.app/sign-up"
+          >アカウント登録</a
+        >
         <div class="footer-links">
           <ul>
-            <li>利用規約</li>
-            <li>プライバシーポリシー</li>
-            <li>開発者のTwitter</li>
-            <li>GitHub</li>
+            <li>
+              <a
+                href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md"
+                target="_blank"
+                rel="noopener"
+                >利用規約</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md"
+                target="_blank"
+                rel="noopener"
+                >プライバシーポリシー</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/ktmouk"
+                target="_blank"
+                rel="noopener"
+                >開発者のTwitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/ktmouk/hackaru"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </li>
           </ul>
         </div>
       </footer>
@@ -145,7 +174,7 @@ export default {
 body {
   font-family: -apple-system, sans-serif;
   font-size: 14px;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 body a {
   color: #2daec4;
@@ -177,10 +206,17 @@ body a {
   align-items: center;
   font-weight: normal;
 }
+.title:hover {
+  opacity: 0.7;
+}
 .title img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+.title span {
+  color: #68757d;
+  margin-left: 10px;
 }
 .login-btn {
   display: block;
@@ -190,6 +226,15 @@ body a {
   background-color: #2daec4;
   color: #fff;
   cursor: pointer;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.login-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.login-btn:active {
+  transform: scale(0.95);
 }
 
 .jumbotron {
@@ -236,6 +281,15 @@ body a {
   border-radius: 5px;
   background-color: #eb4f34;
   font-weight: normal;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.sign-up-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.sign-up-btn:active {
+  transform: scale(0.95);
 }
 
 .desktop {
@@ -296,7 +350,6 @@ body a {
   flex-direction: column;
   position: relative;
   width: 100%;
-  background-color: #fff;
   z-index: 200;
   align-items: center;
 }
@@ -359,6 +412,17 @@ body a {
   border-radius: 5px;
   font-weight: normal;
   background-color: #eb4f34;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+.footer-sign-up:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.footer-sign-up:active {
+  transform: scale(0.95);
 }
 .footer h1 {
   font-size: 36px;
@@ -368,6 +432,9 @@ body a {
 }
 .footer-links {
   padding: 50px 0;
+}
+.footer-links a {
+  color: #35cbe6;
 }
 .footer-links ul {
   display: flex;
@@ -445,6 +512,25 @@ body a {
     order: 2;
     width: 100%;
     margin-top: 20px;
+  }
+  .footer h1 {
+    font-size: 24px;
+    padding-top: 100px;
+    font-weight: normal;
+    color: #fff;
+  }
+  .footer-links ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-links li {
+    color: #fff;
+    border: 0;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-links li:last-child {
+    border-right: none;
   }
 }
 </style>

@@ -1,7 +1,7 @@
 {
-  "name": "hackaru-official",
+  "name": "Hackaru",
   "version": "1.0.0",
-  "description": "Hackaru official website",
+  "description": "時間の管理を始めよう。",
   "author": "ktmouk",
   "private": true,
   "scripts": {
@@ -13,11 +13,18 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.2.0",
     "cross-env": "^5.2.0",
     "date-fns": "^1.30.1",
     "hh-mm-ss": "^1.2.0",
     "nuxt": "^2.4.0",
     "vue-timers": "^2.0.2"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3636"
+    }
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
