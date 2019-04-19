@@ -10,7 +10,7 @@
         </a>
         <a
           class="login-btn"
-          href="https://app.hackaru.app/login"
+          href="https://app.hackaru.app/ja/auth"
           @click="$ga.event('login', 'login')"
           >ログイン</a
         >
@@ -25,7 +25,7 @@
         <p>スマホから、パソコンから、<br />全て無料で簡単に計測できます</p>
         <a
           class="sign-up-btn"
-          href="https://app.hackaru.app/sign-up"
+          href="https://app.hackaru.app/ja/auth?sign-up=true"
           @click="$ga.event('signUp', 'top')"
           >アカウント登録</a
         >
@@ -121,7 +121,7 @@
         <h1>時間の管理を始めよう</h1>
         <a
           class="footer-sign-up"
-          href="https://app.hackaru.app/sign-up"
+          href="https://app.hackaru.app/ja/auth?sign-up=true"
           @click="$ga.event('signUp', 'bottom')"
           >アカウント登録</a
         >
