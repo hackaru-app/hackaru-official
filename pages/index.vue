@@ -35,7 +35,7 @@
           <div class="activity">
             <div class="activity-content">
               <span class="dot" />
-              開発
+              テスト勉強
             </div>
             <ticker class="duration" />
           </div>
