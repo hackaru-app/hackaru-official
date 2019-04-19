@@ -1,5 +1,3 @@
-import pkg from './package'
-
 export default {
   mode: 'universal',
 
@@ -7,11 +5,37 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Hackaru (測る) - 時間の管理を始めよう。',
+    title: 'Hackaru - 時間の管理を始めよう。',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          '勉強、執筆、プログラミング、イラスト制作など、あなたの有意義な時間を管理しよう。時間管理アプリで、簡単に。'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://www.hackaru.app/'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Hackaru - 時間の管理を始めよう'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          '勉強、執筆、プログラミング、イラスト制作など、あなたの有意義な時間を管理しよう。時間管理アプリで、簡単に。'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://www.hackaru.app/ogp.png'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

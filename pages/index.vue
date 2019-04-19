@@ -164,10 +164,15 @@
               >
             </li>
           </ul>
-          <p class="ga"><a
-          target="_blank"
-          rel="noopener"
-          href="https://policies.google.com/technologies/partner-sites">このサイトではアクセス解析に GoogleAnalytics を利用しています。</a></p>
+          <p class="ga">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://policies.google.com/technologies/partner-sites"
+              >このサイトではアクセス解析に GoogleAnalytics
+              を利用しています。</a
+            >
+          </p>
         </div>
       </footer>
     </section>
