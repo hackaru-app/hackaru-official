@@ -8,7 +8,8 @@ export default {
     title: 'Hackaru - 時間の管理を始めよう。',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@ktmouk' },
       {
         hid: 'description',
         name: 'description',
