@@ -47,6 +47,24 @@
         </div>
         <img src="~/assets/reports.png" class="desktop" alt="">
       </article>
+
+      <section class="other-features">
+        <h1>...And other great features.</h1>
+        <div class="other-feature-list">
+          <article class="other-feature">
+            <div class="image-wrapper">
+              <img src="~/assets/pwa.png" alt="">
+            </div>
+            <h1>PWA Support</h1>
+          </article>
+          <article class="other-feature">
+            <div class="image-wrapper">
+              <img src="~/assets/webhook.png" alt="">
+            </div>
+            <h1>Webhook Support</h1>
+          </article>
+        </div>
+      </section>
     </section>
   </section>
 </template>
@@ -209,6 +227,47 @@ body {
 }
 .feature img.desktop {
   width: 560px;
+}
+.other-features {
+  width: 860px;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.other-features > h1 {
+  font-size: 32px;
+  margin-bottom: 80px;
+  font-weight: 200;
+  color: #fff;
+}
+.other-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 20px;
+}
+.other-feature h1 {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 20px;
+}
+.other-feature .image-wrapper {
+  display: block;
+  width: 180px;
+  background-color: #00000011;
+  border-radius: 10px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-feature img {
+  width: 80px;
+}
+.other-feature-list {
+  display: flex;
 }
 @media screen and (max-width: 640px) {
   .jumbotron {
