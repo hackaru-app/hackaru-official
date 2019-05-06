@@ -5,7 +5,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Hackaru - 時間の管理を始めよう。',
+    title: 'Hackaru | Simple Time Tracking App',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,13 +25,12 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Hackaru - 時間の管理を始めよう'
+        content: 'Hackaru | Simple Time Tracking App'
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content:
-          '勉強、執筆、プログラミング、イラスト制作など、あなたの有意義な時間を管理しよう。時間管理アプリで、簡単に。'
+        content: 'Simple, Cross-platform and Open-source Time Tracking App.'
       },
       {
         hid: 'og:image',
