@@ -5,7 +5,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Hackaru | Simple Time Tracking App',
+    title: 'Hackaru | Open-source Time Tracking Application',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

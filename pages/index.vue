@@ -10,6 +10,7 @@
       <header class="header">
         <img src="~/assets/logo.svg" class="logo" alt="">
         <h1>Manage your meaningful time.</h1>
+        <p>Open-source Time Tracking Application.</p>
         <a href="https://app.hackaru.app/auth?sign-up=true" class="sign-in">Start using Hackaru</a>
       </header>
     </section>
@@ -144,12 +145,18 @@ body {
 }
 .header h1 {
   margin: 20px 0;
+  margin-bottom: 10px;
   font-weight: normal;
   color: #fff;
   font-size: 26px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+}
+.header p {
+  color: #cdd0d1;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 .header .sign-in,
 .download {
