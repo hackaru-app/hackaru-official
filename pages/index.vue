@@ -167,15 +167,17 @@ body {
   margin-bottom: 10px;
   font-weight: normal;
   color: #fff;
-  font-size: 26px;
+  font-size: 32px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 .header p {
-  color: #cdd0d1;
+  color: #eeeeee;
+  font-size: 18px;
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 .header .sign-in,
 .download,
@@ -330,6 +332,9 @@ body {
   }
   .header h1 {
     font-size: 22px;
+  }
+  .header p {
+    font-size: 14px;
   }
   .feature {
     padding: 30px;
