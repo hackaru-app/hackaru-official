@@ -70,6 +70,12 @@
             </div>
             <h1>OAuth 2.0 Support</h1>
           </article>
+          <article class="other-feature">
+            <div class="image-wrapper">
+              <img src="~/assets/open-source.png" alt="">
+            </div>
+            <h1>Open-Source</h1>
+          </article>
         </div>
       </section>
     </section>
