@@ -15,12 +15,28 @@
     </section>
 
     <section class="content">
-      <article class="feature">
+      <article class="feature measure">
         <div class="description">
-          <h1>Measure your time easily.</h1>
+          <h1>Measure your time.</h1>
           <p>Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming.</p>
         </div>
-        <img src="~/assets/measure.png" alt="">
+        <img src="~/assets/measure.png" class="cell-phone" alt="">
+      </article>
+
+      <article class="feature calendar">
+        <div class="description">
+          <h1>Calendar</h1>
+          <p>Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming.</p>
+        </div>
+        <img src="~/assets/calendar.png" class="desktop" alt="">
+      </article>
+
+      <article class="feature reports">
+        <div class="description">
+          <h1>Report</h1>
+          <p>Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming.</p>
+        </div>
+        <img src="~/assets/reports.png" class="desktop" alt="">
       </article>
     </section>
   </section>
@@ -131,14 +147,24 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  align-self: center;
+  flex-direction: column;
+  align-items: center;
   color: #fff;
 }
 .feature {
-  margin: 100px 60px;
+  border-bottom: 1px #00000011 solid;
+  padding: 100px 0;
+  width: 860px;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.feature:nth-child(odd) .description {
+  order: 2;
+}
+.feature:nth-child(odd) img {
+  order: 1;
+  margin-right: 50px;
 }
 .feature .description {
   display: flex;
@@ -160,10 +186,15 @@ body {
   color: #cdd0d1;
 }
 .feature img {
-  width: 300px;
   flex-shrink: 0;
   box-shadow: 0 3px 10px 5px #00000010;
   border-radius: 5px;
+}
+.feature img.cell-phone {
+  width: 300px;
+}
+.feature img.desktop {
+  width: 560px;
 }
 @media screen and (max-width: 640px) {
   .jumbotron {
@@ -173,8 +204,10 @@ body {
     font-size: 22px;
   }
   .feature {
-    margin: 0;
-    margin-top: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 50px;
     flex-direction: column;
   }
   .feature h1 {
@@ -182,13 +215,19 @@ body {
   }
   .feature p {
     font-size: 14px;
-    padding: 0 30px;
+  }
+  .feature:nth-child(odd) img {
+    order: 2;
+    margin-right: 0;
   }
   .feature .description {
     width: 100%;
     margin: 0;
     text-align: center;
     margin-bottom: 40px;
+  }
+  .feature img {
+    width: 300px !important;
   }
 }
 </style>
