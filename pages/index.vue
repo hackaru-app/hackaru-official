@@ -79,6 +79,16 @@
         </div>
       </section>
     </section>
+
+    <footer class="footer">
+      <a href="https://app.hackaru.app/auth?sign-up=true" class="sign-in">Start using Hackaru</a>
+      <ul class="footer-menu">
+        <li><a target="_blank" href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md">Term of Service</a></li>
+        <li><a target="_blank" href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md">Privacy policy</a></li>
+        <li><a target="_blank" href="https://github.com/ktmouk/hackaru">GitHub</a></li>
+        <li><a target="_blank" href="https://twitter.com/hackaru">Twitter</a></li>
+      </ul>
+    </footer>
   </section>
 </template>
 
@@ -171,7 +181,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .header .sign-in,
-.download {
+.download,
+.footer .sign-in {
   border: 0;
   border-radius: 5px;
   text-decoration: none;
@@ -287,6 +298,33 @@ body {
 .other-feature-list {
   display: flex;
 }
+
+/** Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000011;
+}
+.footer .sign-in {
+  margin: 150px 0;
+}
+.footer-menu {
+  display: flex;
+  list-style: none;
+  margin-bottom: 40px;
+  padding: 0;
+}
+.footer-menu a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #f5f6f7;
+}
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 640px) {
   .jumbotron {
     height: 90vh;
@@ -331,6 +369,18 @@ body {
   }
   .other-feature-list {
     flex-direction: column;
+  }
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .footer-menu a {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px #00000050 solid;
   }
 }
 </style>
