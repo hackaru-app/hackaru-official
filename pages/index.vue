@@ -64,6 +64,12 @@
             </div>
             <h1>Webhook Support</h1>
           </article>
+          <article class="other-feature">
+            <div class="image-wrapper">
+              <img src="~/assets/oauth.png" alt="">
+            </div>
+            <h1>OAuth 2.0 Support</h1>
+          </article>
         </div>
       </section>
     </section>
