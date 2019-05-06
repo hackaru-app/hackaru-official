@@ -307,6 +307,9 @@ body {
   .feature p {
     font-size: 14px;
   }
+  .download {
+    align-self: center;
+  }
   .feature:nth-child(odd) img {
     order: 2;
     margin-right: 0;
@@ -319,6 +322,15 @@ body {
   }
   .feature img {
     width: 300px !important;
+  }
+  .other-feature {
+    margin-bottom: 25px;
+  }
+  .other-features > h1 {
+    font-size: 24px;
+  }
+  .other-feature-list {
+    flex-direction: column;
   }
 }
 </style>
