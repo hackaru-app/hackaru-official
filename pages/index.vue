@@ -113,9 +113,6 @@ body {
   background-color: #2E3647;
   font-size: 14px;
 }
-.wrapper {
-  flex-direction: column;
-}
 
 /** Headers **/
 .jumbotron {
@@ -212,7 +209,8 @@ body {
 .feature {
   border-bottom: 1px #00000011 solid;
   padding: 100px 0;
-  width: 860px;
+  max-width: 860px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -258,7 +256,8 @@ body {
   width: 560px;
 }
 .other-features {
-  width: 860px;
+  max-width: 860px;
+  width: 100%;
   padding: 100px 0;
   display: flex;
   align-items: center;
@@ -379,8 +378,9 @@ body {
   .footer-menu a {
     display: block;
     width: 100%;
+    box-sizing: border-box;
     padding: 20px 0;
-    border-top: 1px #00000050 solid;
+    border-top: 1px #00000020 solid;
   }
 }
 </style>
