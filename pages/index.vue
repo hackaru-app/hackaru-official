@@ -83,10 +83,10 @@
     <footer class="footer">
       <a href="https://app.hackaru.app/auth?sign-up=true" class="sign-in">Start using Hackaru</a>
       <ul class="footer-menu">
-        <li><a target="_blank" href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md">Term of Service</a></li>
-        <li><a target="_blank" href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md">Privacy policy</a></li>
-        <li><a target="_blank" href="https://github.com/ktmouk/hackaru">GitHub</a></li>
-        <li><a target="_blank" href="https://twitter.com/hackaru">Twitter</a></li>
+        <li><a target="_blank" ref="noopener" href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md">Term of Service</a></li>
+        <li><a target="_blank" ref="noopener" href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md">Privacy policy</a></li>
+        <li><a target="_blank" ref="noopener" href="https://github.com/ktmouk/hackaru">GitHub</a></li>
+        <li><a target="_blank" ref="noopener" href="https://twitter.com/hackaru">Twitter</a></li>
       </ul>
     </footer>
   </section>
