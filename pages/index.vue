@@ -219,7 +219,6 @@ body {
 }
 .feature img {
   flex-shrink: 0;
-  box-shadow: 0 3px 10px 5px #00000010;
   border-radius: 5px;
 }
 .feature img.cell-phone {
