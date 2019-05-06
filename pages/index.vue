@@ -38,6 +38,15 @@
         </div>
         <img src="~/assets/reports.png" class="desktop" alt="">
       </article>
+
+      <article class="feature desktop-app">
+        <div class="description">
+          <h1>Auto Tracking</h1>
+          <p>Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming.</p>
+          <a href="https://app.hackaru.app/auth?sign-up=true" class="download">Learn more</a>
+        </div>
+        <img src="~/assets/reports.png" class="desktop" alt="">
+      </article>
     </section>
   </section>
 </template>
@@ -124,7 +133,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-.header .sign-in {
+.header .sign-in,
+.download {
   border: 0;
   border-radius: 5px;
   text-decoration: none;
@@ -184,6 +194,10 @@ body {
   line-height: 1.5;
   font-size: 16px;
   color: #cdd0d1;
+}
+.download {
+  margin-top: 30px;
+  align-self: flex-start;
 }
 .feature img {
   flex-shrink: 0;
