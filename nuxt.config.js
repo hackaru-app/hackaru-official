@@ -5,17 +5,17 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Hackaru - 時間の管理を始めよう。',
+    title: 'Hackaru | Open-source Time Tracking Application',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:creator', content: '@ktmouk' },
+      { name: 'twitter:creator', content: '@hackaru' },
       {
         hid: 'description',
         name: 'description',
         content:
-          '勉強、執筆、プログラミング、イラスト制作など、あなたの有意義な時間を管理しよう。時間管理アプリで、簡単に。'
+          'Simple, Cross-platform and Open-source Time Tracking Application.'
       },
       {
         hid: 'og:url',
@@ -25,13 +25,13 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Hackaru - 時間の管理を始めよう'
+        content: 'Hackaru | Open-source Time Tracking Application'
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          '勉強、執筆、プログラミング、イラスト制作など、あなたの有意義な時間を管理しよう。時間管理アプリで、簡単に。'
+          'Simple, Cross-platform and Open-source Time Tracking Application.'
       },
       {
         hid: 'og:image',
@@ -43,7 +43,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Sawarabi+Mincho'
+        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400'
       }
     ]
   },
