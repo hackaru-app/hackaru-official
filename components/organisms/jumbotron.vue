@@ -2,8 +2,20 @@
   <section class="jumbotron">
     <nav class="nav">
       <ul>
-        <li><a href="https://app.hackaru.app/auth">Login</a></li>
-        <li><a href="https://app.hackaru.app/auth?sign-up=true">Sign-up</a></li>
+        <li>
+          <a
+            href="https://app.hackaru.app/auth"
+            @click="$ga.event('login', 'header')"
+            >Login</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://app.hackaru.app/auth?sign-up=true"
+            @click="$ga.event('signUp', 'header')"
+            >Sign-up</a
+          >
+        </li>
       </ul>
     </nav>
     <header class="header">

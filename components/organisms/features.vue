@@ -44,6 +44,7 @@
           href="https://github.com/ktmouk/hackaru-desktop"
           target="_blank"
           class="learn-more"
+          @click="$ga.event('desktop', 'features')"
           >See Desktop version</a
         >
       </div>
