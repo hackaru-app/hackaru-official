@@ -28,7 +28,7 @@
       <div class="description">
         <h1>Auto Tracking</h1>
         <p>By installing the desktop version, you can automatically measure the time you are using your favorite applications like Atom, Sketch, Photoshop.</p>
-        <btn href="https://app.hackaru.app/auth?sign-up=true" class="learn-btn">Learn more</btn>
+        <a href="https://github.com/ktmouk/hackaru-desktop" target="_blank" ref="noopener" class="learn-more">See Desktop version</a>
       </div>
       <img src="~/assets/auto-tracking.png" alt="">
     </feature>
@@ -46,3 +46,18 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+a.learn-more {
+  color: #ffd96a;
+  font-size: 16px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+@media screen and (max-width: 640px) {
+  a.learn-more {
+    font-size: 14px;
+    align-self: center;
+  }
+}
+</style>

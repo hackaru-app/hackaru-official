@@ -39,10 +39,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.learn-btn {
-  margin-top: 30px;
-  align-self: flex-start;
-}
 .content {
   display: flex;
   justify-content: center;

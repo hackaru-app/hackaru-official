@@ -91,4 +91,12 @@ export default {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
+@media screen and (max-width: 640px) {
+  .header h1 {
+    font-size: 22px;
+  }
+  .header p {
+    font-size: 14px;
+  }
+}
 </style>
