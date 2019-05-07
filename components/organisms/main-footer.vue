@@ -1,6 +1,9 @@
 <template>
   <footer class="footer">
-    <btn href="https://app.hackaru.app/auth?sign-up=true" class="btn"
+    <btn
+      href="https://app.hackaru.app/auth?sign-up=true"
+      class="btn"
+      @click="$ga.event('signUp', 'footer')"
       >Start using Hackaru</btn
     >
     <ul class="footer-menu">
@@ -9,6 +12,7 @@
           ref="noopener"
           target="_blank"
           href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md"
+          @click="$ga.event('terms', 'footer')"
           >Term of Service</a
         >
       </li>
@@ -17,6 +21,7 @@
           ref="noopener"
           target="_blank"
           href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md"
+          @click="$ga.event('privacy', 'footer')"
           >Privacy policy</a
         >
       </li>
@@ -25,11 +30,16 @@
           ref="noopener"
           target="_blank"
           href="https://github.com/ktmouk/hackaru"
+          @click="$ga.event('github', 'footer')"
           >GitHub</a
         >
       </li>
       <li>
-        <a ref="noopener" target="_blank" href="https://twitter.com/hackaru"
+        <a
+          ref="noopener"
+          target="_blank"
+          href="https://twitter.com/hackaru"
+          @click="$ga.event('twitter', 'footer')"
           >Twitter</a
         >
       </li>
