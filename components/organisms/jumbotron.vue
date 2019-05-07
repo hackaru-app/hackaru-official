@@ -7,16 +7,18 @@
       </ul>
     </nav>
     <header class="header">
-      <img src="~/assets/logo.svg" class="logo" alt="">
+      <img src="~/assets/logo.svg" class="logo" alt="" />
       <h1>Manage your meaningful time.</h1>
       <p>Open-source Time Tracking Application.</p>
-      <btn href="https://app.hackaru.app/auth?sign-up=true">Start using Hackaru</btn>
+      <btn href="https://app.hackaru.app/auth?sign-up=true"
+        >Start using Hackaru</btn
+      >
     </header>
   </section>
 </template>
 
 <script>
-import Btn from '~/components/atoms/btn';
+import Btn from '~/components/atoms/btn'
 
 export default {
   components: {
@@ -25,12 +27,11 @@ export default {
 }
 </script>
 
-
 <style scoped>
 .jumbotron {
   display: flex;
   flex-direction: column;
-  background-color: #323A4D;
+  background-color: #323a4d;
   width: 100%;
 }
 .nav ul {

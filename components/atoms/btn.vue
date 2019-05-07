@@ -8,7 +8,7 @@ a {
   border-radius: 5px;
   text-decoration: none;
   padding: 15px 25px;
-  color: #323A4D;
+  color: #323a4d;
   font-size: 16px;
   background-color: #ffd96a;
   transition: all 0.3s ease;

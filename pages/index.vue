@@ -10,15 +10,13 @@
 </template>
 
 <script>
-import Btn from '~/components/atoms/btn';
-import Jumbotron from '~/components/organisms/jumbotron';
-import MainFooter from '~/components/organisms/main-footer';
-import Features from '~/components/organisms/features';
-import OtherFeatures from '~/components/organisms/other-features';
+import Jumbotron from '~/components/organisms/jumbotron'
+import MainFooter from '~/components/organisms/main-footer'
+import Features from '~/components/organisms/features'
+import OtherFeatures from '~/components/organisms/other-features'
 
 export default {
   components: {
-    Btn,
     Jumbotron,
     MainFooter,
     Features,
@@ -29,7 +27,7 @@ export default {
 
 <style>
 body {
-  background-color: #2E3647;
+  background-color: #2e3647;
   font-size: 14px;
 }
 a {

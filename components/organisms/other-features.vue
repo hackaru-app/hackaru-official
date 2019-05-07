@@ -4,25 +4,25 @@
     <div class="other-feature-list">
       <other-feature>
         <div class="image-wrapper">
-          <img src="~/assets/pwa.png" alt="">
+          <img src="~/assets/pwa.png" alt="" />
         </div>
         <h1>PWA Support</h1>
       </other-feature>
       <other-feature>
         <div class="image-wrapper">
-          <img src="~/assets/webhook.png" alt="">
+          <img src="~/assets/webhook.png" alt="" />
         </div>
         <h1>Send Webhook</h1>
       </other-feature>
       <other-feature>
         <div class="image-wrapper">
-          <img src="~/assets/oauth.png" alt="">
+          <img src="~/assets/oauth.png" alt="" />
         </div>
         <h1>OAuth 2.0 Provider</h1>
       </other-feature>
       <other-feature>
         <div class="image-wrapper">
-          <img src="~/assets/open-source.png" alt="">
+          <img src="~/assets/open-source.png" alt="" />
         </div>
         <h1>Open-Source</h1>
       </other-feature>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import OtherFeature from '~/components/molecules/other-feature';
+import OtherFeature from '~/components/molecules/other-feature'
 
 export default {
   components: {
