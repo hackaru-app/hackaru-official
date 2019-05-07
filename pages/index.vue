@@ -46,7 +46,7 @@
           <p>By installing the desktop version, you can automatically measure the time you are using your favorite applications like Atom, Sketch, Photoshop.</p>
           <a href="https://app.hackaru.app/auth?sign-up=true" class="download">Learn more</a>
         </div>
-        <img src="~/assets/reports.png" class="desktop" alt="">
+        <img src="~/assets/auto-tracking.png" class="desktop" alt="">
       </article>
 
       <section class="other-features">
