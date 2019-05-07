@@ -27,7 +27,7 @@
       <article class="feature calendar">
         <div class="description">
           <h1>Calendar</h1>
-          <p>Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming.</p>
+          <p>You can use the calendar to look back on activities. And you can also later update or add activities from the calendar.</p>
         </div>
         <img src="~/assets/calendar.png" class="desktop" alt="">
       </article>
@@ -35,7 +35,7 @@
       <article class="feature reports">
         <div class="description">
           <h1>Report</h1>
-          <p>Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming.</p>
+          <p>You can use the report to analyze activities.</p>
         </div>
         <img src="~/assets/reports.png" class="desktop" alt="">
       </article>
@@ -43,7 +43,7 @@
       <article class="feature desktop-app">
         <div class="description">
           <h1>Auto Tracking</h1>
-          <p>Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming.</p>
+          <p>By installing the desktop version, you can automatically measure the time you are using your favorite applications like Atom, Sketch, Photoshop.</p>
           <a href="https://app.hackaru.app/auth?sign-up=true" class="download">Learn more</a>
         </div>
         <img src="~/assets/reports.png" class="desktop" alt="">
@@ -62,13 +62,13 @@
             <div class="image-wrapper">
               <img src="~/assets/webhook.png" alt="">
             </div>
-            <h1>Webhook Support</h1>
+            <h1>Send Webhook</h1>
           </article>
           <article class="other-feature">
             <div class="image-wrapper">
               <img src="~/assets/oauth.png" alt="">
             </div>
-            <h1>OAuth 2.0 Support</h1>
+            <h1>OAuth 2.0 Provider</h1>
           </article>
           <article class="other-feature">
             <div class="image-wrapper">
