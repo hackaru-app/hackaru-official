@@ -11,7 +11,7 @@
         <img src="~/assets/logo.svg" class="logo" alt="">
         <h1>Manage your meaningful time.</h1>
         <p>Open-source Time Tracking Application.</p>
-        <a href="https://app.hackaru.app/auth?sign-up=true" class="sign-in">Start using Hackaru</a>
+        <a href="https://app.hackaru.app/auth?sign-up=true" class="primary-btn">Start using Hackaru</a>
       </header>
     </section>
 
@@ -21,7 +21,7 @@
           <h1>Measure your time.</h1>
           <p>Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming.</p>
         </div>
-        <img src="~/assets/measure.png" class="cell-phone" alt="">
+        <img src="~/assets/measure.png" class="small" alt="">
       </article>
 
       <article class="feature calendar">
@@ -29,7 +29,7 @@
           <h1>Calendar</h1>
           <p>You can use the calendar to look back on activities. And you can also later update or add activities from the calendar.</p>
         </div>
-        <img src="~/assets/calendar.png" class="desktop" alt="">
+        <img src="~/assets/calendar.png" class="large" alt="">
       </article>
 
       <article class="feature reports">
@@ -37,16 +37,16 @@
           <h1>Report</h1>
           <p>You can use the report to analyze activities.</p>
         </div>
-        <img src="~/assets/reports.png" class="desktop" alt="">
+        <img src="~/assets/reports.png" class="large" alt="">
       </article>
 
       <article class="feature desktop-app">
         <div class="description">
           <h1>Auto Tracking</h1>
           <p>By installing the desktop version, you can automatically measure the time you are using your favorite applications like Atom, Sketch, Photoshop.</p>
-          <a href="https://app.hackaru.app/auth?sign-up=true" class="download">Learn more</a>
+          <a href="https://app.hackaru.app/auth?sign-up=true" class="primary-btn learn-btn">Learn more</a>
         </div>
-        <img src="~/assets/auto-tracking.png" class="desktop" alt="">
+        <img src="~/assets/auto-tracking.png" class="large" alt="">
       </article>
 
       <section class="other-features">
@@ -81,7 +81,7 @@
     </section>
 
     <footer class="footer">
-      <a href="https://app.hackaru.app/auth?sign-up=true" class="sign-in">Start using Hackaru</a>
+      <a href="https://app.hackaru.app/auth?sign-up=true" class="primary-btn">Start using Hackaru</a>
       <ul class="footer-menu">
         <li><a target="_blank" ref="noopener" href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md">Term of Service</a></li>
         <li><a target="_blank" ref="noopener" href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md">Privacy policy</a></li>
@@ -112,6 +112,31 @@ export default {
 body {
   background-color: #2E3647;
   font-size: 14px;
+}
+a {
+  color: #f5f6f7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.primary-btn {
+  border: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 25px;
+  margin-top: 10px;
+  color: #323A4D;
+  font-size: 16px;
+  background-color: #ffd96a;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+.primary-btn:active {
+  transform: scale(1);
 }
 
 /** Headers **/
@@ -179,26 +204,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-.header .sign-in,
-.download,
-.footer .sign-in {
-  border: 0;
-  border-radius: 5px;
-  text-decoration: none;
-  padding: 15px 25px;
-  margin-top: 10px;
-  color: #323A4D;
-  font-size: 16px;
-  background-color: #ffd96a;
-  transition: all 0.3s ease;
-  transform: scale(1);
-}
-.header .sign-in:hover {
-  transform: scale(1.05);
-}
-.header .sign-in:active {
-  transform: scale(1);
-}
 
 /** Content */
 .content {
@@ -243,7 +248,7 @@ body {
   font-size: 16px;
   color: #cdd0d1;
 }
-.download {
+.learn-btn {
   margin-top: 30px;
   align-self: flex-start;
 }
@@ -251,10 +256,10 @@ body {
   flex-shrink: 0;
   border-radius: 5px;
 }
-.feature img.cell-phone {
+.feature img.small {
   width: 300px;
 }
-.feature img.desktop {
+.feature img.large {
   width: 560px;
 }
 .other-features {
@@ -308,7 +313,7 @@ body {
   justify-content: center;
   background-color: #00000011;
 }
-.footer .sign-in {
+.footer .primary-btn {
   margin: 150px 0;
 }
 .footer-menu {
