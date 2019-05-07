@@ -16,6 +16,7 @@
   font-size: 16px;
   font-weight: 200;
   padding: 20px;
+  margin-bottom: 20px;
 }
 .other-feature .image-wrapper {
   display: block;
