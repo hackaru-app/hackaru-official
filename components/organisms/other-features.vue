@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .other-features {
-  max-width: 860px;
+  max-width: 100%;
   width: 100%;
   padding: 100px 0;
   display: flex;
@@ -57,14 +57,13 @@ export default {
 }
 .other-feature-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (max-width: 640px) {
   .other-features > h1 {
     font-size: 24px;
-  }
-  .other-feature-list {
-    flex-direction: column;
   }
 }
 </style>

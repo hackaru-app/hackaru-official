@@ -54,10 +54,14 @@ a.learn-more {
   margin-top: 10px;
   align-self: flex-start;
 }
+@media screen and (max-width: 1024px) {
+  a.learn-more {
+    align-self: center;
+  }
+}
 @media screen and (max-width: 640px) {
   a.learn-more {
     font-size: 14px;
-    align-self: center;
   }
 }
 </style>

@@ -50,7 +50,7 @@
 .feature img {
   width: 560px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
   .feature {
     padding: 30px;
     box-sizing: border-box;
@@ -58,15 +58,23 @@
     margin-top: 50px;
     flex-direction: column;
   }
+  .feature.reverse img {
+    order: 2;
+    margin-right: 0;
+  }
+  .feature .description {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
   .feature h1 {
     font-size: 26px;
   }
   .feature p {
     font-size: 14px;
-  }
-  .feature.reverse img {
-    order: 2;
-    margin-right: 0;
   }
   .feature .description {
     width: 100%;
