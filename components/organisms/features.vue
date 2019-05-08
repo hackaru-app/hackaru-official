@@ -2,14 +2,14 @@
   <section>
     <feature class="reverse">
       <div class="description">
-        <h1>Measure your time.</h1>
+        <h1>Tracking</h1>
         <p>
           Hackaru is the cross-platform and open-source time tracking
           application. You can measure your meaningful time like reading book,
           study, programming.
         </p>
       </div>
-      <img src="~/assets/measure.png" class="small" alt="" />
+      <img src="~/assets/tracking.png" class="small" alt="" />
     </feature>
 
     <feature>
