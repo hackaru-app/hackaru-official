@@ -1,51 +1,42 @@
+<i18n src="~/assets/locales/components/organisms/features.json" />
+
 <template>
   <section>
     <feature class="reverse">
       <div class="description">
-        <h1>Tracking</h1>
-        <p>
-          Hackaru is the cross-platform and open-source time tracking
-          application. You can measure your meaningful time like reading book,
-          study, programming.
-        </p>
+        <h1>{{ $t('tracking.title') }}</h1>
+        <p>{{ $t('tracking.description') }}</p>
       </div>
       <img src="~/assets/tracking.png" class="small" alt="" />
     </feature>
 
     <feature>
       <div class="description">
-        <h1>Calendar</h1>
-        <p>
-          You can use the calendar to look back on activities. And you can also
-          later update or add activities from the calendar.
-        </p>
+        <h1>{{ $t('calendar.title') }}</h1>
+        <p>{{ $t('calendar.description') }}</p>
       </div>
       <img src="~/assets/calendar.png" alt="" />
     </feature>
 
     <feature class="reverse">
       <div class="description">
-        <h1>Report</h1>
-        <p>You can use the report to analyze activities.</p>
+        <h1>{{ $t('reports.title') }}</h1>
+        <p>{{ $t('reports.description') }}</p>
       </div>
       <img src="~/assets/reports.png" alt="" />
     </feature>
 
     <feature>
       <div class="description">
-        <h1>Auto Tracking</h1>
-        <p>
-          By installing the desktop version, you can automatically measure the
-          time you are using your favorite applications like Atom, Sketch,
-          Photoshop.
-        </p>
+        <h1>{{ $t('autoTracking.title') }}</h1>
+        <p>{{ $t('autoTracking.description') }}</p>
         <a
           ref="noopener"
           href="https://github.com/ktmouk/hackaru-desktop"
           target="_blank"
           class="learn-more"
           @click="$ga.event('desktop', 'features')"
-          >See Desktop version</a
+          >{{ $t('autoTracking.more') }}</a
         >
       </div>
       <img src="~/assets/auto-tracking.png" alt="" />

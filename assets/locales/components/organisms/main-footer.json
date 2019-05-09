@@ -1,0 +1,12 @@
+{
+  "en": {
+    "signUpButton": "Start using Hackaru",
+    "termOfService": "Term of Service",
+    "privacyPolicy": "Privacy policy"
+  },
+  "ja": {
+    "signUpButton": "アカウント登録して開始",
+    "termOfService": "利用規約",
+    "privacyPolicy": "プライバシーポリシー"
+  }
+}

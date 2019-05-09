@@ -1,3 +1,5 @@
+<i18n src="~/assets/locales/components/organisms/jumbotron.json" />
+
 <template>
   <section class="jumbotron">
     <nav class="nav">
@@ -6,24 +8,24 @@
           <a
             href="https://app.hackaru.app/auth"
             @click="$ga.event('login', 'header')"
-            >Login</a
+            >{{ $t('login') }}</a
           >
         </li>
         <li>
           <a
             href="https://app.hackaru.app/auth?sign-up=true"
             @click="$ga.event('signUp', 'header')"
-            >Sign-up</a
+            >{{ $t('signUp') }}</a
           >
         </li>
       </ul>
     </nav>
     <header class="header">
       <img src="~/assets/logo.svg" class="logo" alt="" />
-      <h1>Manage your meaningful time.</h1>
-      <p>Open-source Time Tracking Application.</p>
-      <btn href="https://app.hackaru.app/auth?sign-up=true"
-        >Start using Hackaru</btn
+      <h1>{{ $t('title') }}</h1>
+      <p>{{ $t('description') }}</p>
+      <btn href="https://app.hackaru.app/auth?sign-up=true">
+        {{ $t('signUpButton') }}</btn
       >
     </header>
   </section>

@@ -1,0 +1,16 @@
+{
+  "en": {
+    "title": "...And other great features.",
+    "pwa": "PWA Support",
+    "webhook": "Send Webhook",
+    "oauth": "OAuth 2.0 Provider",
+    "openSource": "Open-Source"
+  },
+  "ja": {
+    "title": "その他の機能",
+    "pwa": "PWAをサポート",
+    "webhook": "Webhook 連携",
+    "oauth": "OAuth 2.0 連携",
+    "openSource": "オープンソース"
+  }
+}

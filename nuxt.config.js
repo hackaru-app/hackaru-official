@@ -66,7 +66,20 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/google-analytics', 'nuxt-i18n'],
+  modules: [
+    '@nuxtjs/google-analytics',
+    [
+      'nuxt-i18n',
+      {
+        locales: [{ code: 'ja', iso: 'ja_JP' }, { code: 'en', iso: 'en-US' }],
+        defaultLocale: 'en',
+        vueI18n: {
+          fallbackLocale: 'en'
+        },
+        vueI18nLoader: true
+      }
+    ]
+  ],
 
   googleAnalytics: {
     id: 'UA-137391422-4'

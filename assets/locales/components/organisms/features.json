@@ -1,0 +1,40 @@
+{
+  "en": {
+    "tracking": {
+      "title": "Tracking",
+      "description": "Hackaru is the cross-platform and open-source time tracking application. You can measure your meaningful time like reading book, study, programming."
+    },
+    "calendar": {
+      "title": "Calendar",
+      "description": "You can use the calendar to look back on activities. And you can also later update or add activities from the calendar."
+    },
+    "reports": {
+      "title": "Report",
+      "description": "You can use the report to analyze activities."
+    },
+    "autoTracking": {
+      "title": "Auto Tracking",
+      "description": "By installing the desktop version, you can automatically measure the time you are using your favorite applications like Atom, Sketch, Photoshop.",
+      "more": "See Desktop version"
+    }
+  },
+  "ja": {
+    "tracking": {
+      "title": "時間を測る",
+      "description": "Hackaruはウェブでもスマートフォンでも使えるオープンソースなタイムトラッキングアプリです。勉強や仕事、読書など、あなたの取り組んだ時間を計測できます。"
+    },
+    "calendar": {
+      "title": "カレンダー",
+      "description": "計測した時間を、カレンダーで振り返ることができます。また、後から記録することもできるので、計測し忘れても安心です。"
+    },
+    "reports": {
+      "title": "分析",
+      "description": "円グラフやバーチャートで計測結果を分析することができます。"
+    },
+    "autoTracking": {
+      "title": "自動で計測",
+      "description": "デスクトップ版をインストールすれば、PhotoshopやAtomエディタなど、お気に入りのアプリケーションを使っている時間を自動で計測できます。",
+      "more": "デスクトップ版を詳しく見る"
+    }
+  }
+}
