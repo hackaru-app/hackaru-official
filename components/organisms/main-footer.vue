@@ -1,10 +1,12 @@
+<i18n src="~/assets/locales/components/organisms/main-footer.json" />
+
 <template>
   <footer class="footer">
     <btn
       href="https://app.hackaru.app/auth?sign-up=true"
       class="btn"
       @click="$ga.event('signUp', 'footer')"
-      >Start using Hackaru</btn
+      >{{ $t('signUpButton') }}</btn
     >
     <ul class="footer-menu">
       <li>
@@ -13,7 +15,7 @@
           target="_blank"
           href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md"
           @click="$ga.event('terms', 'footer')"
-          >Term of Service</a
+          >{{ $t('termOfService') }}</a
         >
       </li>
       <li>
@@ -22,7 +24,7 @@
           target="_blank"
           href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md"
           @click="$ga.event('privacy', 'footer')"
-          >Privacy policy</a
+          >{{ $t('privacyPolicy') }}</a
         >
       </li>
       <li>

@@ -1,30 +1,32 @@
+<i18n src="~/assets/locales/components/organisms/other-features.json" />
+
 <template>
   <section class="other-features">
-    <h1>...And other great features.</h1>
+    <h1>{{ $t('title') }}</h1>
     <div class="other-feature-list">
       <other-feature>
         <div class="image-wrapper">
           <img src="~/assets/pwa.png" alt="" />
         </div>
-        <h1>PWA Support</h1>
+        <h1>{{ $t('pwa') }}</h1>
       </other-feature>
       <other-feature>
         <div class="image-wrapper">
           <img src="~/assets/webhook.png" alt="" />
         </div>
-        <h1>Send Webhook</h1>
+        <h1>{{ $t('webhook') }}</h1>
       </other-feature>
       <other-feature>
         <div class="image-wrapper">
           <img src="~/assets/oauth.png" alt="" />
         </div>
-        <h1>OAuth 2.0 Provider</h1>
+        <h1>{{ $t('oauth') }}</h1>
       </other-feature>
       <other-feature>
         <div class="image-wrapper">
           <img src="~/assets/open-source.png" alt="" />
         </div>
-        <h1>Open-Source</h1>
+        <h1>{{ $t('openSource') }}</h1>
       </other-feature>
     </div>
   </section>
@@ -63,7 +65,7 @@ export default {
 
 @media screen and (max-width: 640px) {
   .other-features > h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 </style>
