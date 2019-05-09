@@ -65,7 +65,7 @@ export default {
 
 @media screen and (max-width: 640px) {
   .other-features > h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 </style>

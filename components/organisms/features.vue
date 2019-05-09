@@ -66,9 +66,4 @@ a.learn-more {
     align-self: center;
   }
 }
-@media screen and (max-width: 640px) {
-  a.learn-more {
-    font-size: 14px;
-  }
-}
 </style>

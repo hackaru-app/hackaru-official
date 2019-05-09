@@ -71,10 +71,7 @@
 }
 @media screen and (max-width: 640px) {
   .feature h1 {
-    font-size: 26px;
-  }
-  .feature p {
-    font-size: 14px;
+    font-size: 28px;
   }
   .feature .description {
     width: 100%;
