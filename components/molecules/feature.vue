@@ -37,7 +37,6 @@
 }
 .feature p {
   line-height: 1.5;
-  font-size: 16px;
   color: #cdd0d1;
 }
 .feature img {

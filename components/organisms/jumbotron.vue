@@ -3,6 +3,7 @@
 <template>
   <section class="jumbotron">
     <nav class="nav">
+      <locale-select class="locale-select" />
       <ul>
         <li>
           <a
@@ -33,10 +34,12 @@
 
 <script>
 import Btn from '~/components/atoms/btn'
+import LocaleSelect from '~/components/molecules/locale-select'
 
 export default {
   components: {
-    Btn
+    Btn,
+    LocaleSelect
   }
 }
 </script>
@@ -48,13 +51,19 @@ export default {
   background-color: #323a4d;
   width: 100%;
 }
-.nav ul {
+.nav {
   position: absolute;
-  right: 0;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  padding: 25px 20px;
+  padding-left: 30px;
+  align-items: baseline;
+}
+.nav ul {
   display: flex;
   list-style: none;
   justify-content: flex-end;
-  margin: 30px 20px;
   list-style-position: inside;
 }
 .nav li a {
@@ -100,11 +109,11 @@ export default {
   font-weight: 300;
 }
 .header p {
-  color: #eeeeee;
+  color: #ccc;
   font-size: 18px;
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (max-width: 640px) {
   .header h1 {
