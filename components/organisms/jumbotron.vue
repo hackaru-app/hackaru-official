@@ -56,7 +56,8 @@ export default {
   justify-content: space-between;
   width: 100%;
   display: flex;
-  padding: 25px;
+  padding: 25px 20px;
+  padding-left: 30px;
   align-items: baseline;
 }
 .nav ul {
@@ -108,16 +109,13 @@ export default {
   font-weight: 300;
 }
 .header p {
-  color: #eee;
+  color: #ccc;
   font-size: 18px;
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media screen and (max-width: 640px) {
-  .nav {
-    padding-right: 10px;
-  }
   .header h1 {
     font-size: 22px;
   }

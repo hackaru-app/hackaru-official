@@ -27,7 +27,7 @@ export default {
   display: flex;
   border: 0;
   background: none;
-  padding: 5px 0;
+  padding: 3px 0;
   border-bottom: 1px #fff solid;
   border-radius: 0;
   -webkit-appearance: none;
