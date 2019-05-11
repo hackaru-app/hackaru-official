@@ -28,7 +28,7 @@ export default {
 <style>
 body {
   background-color: #2e3647;
-  font-size: 14px;
+  font-size: 16px;
 }
 a {
   color: #f5f6f7;
