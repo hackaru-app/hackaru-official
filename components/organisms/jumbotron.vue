@@ -29,16 +29,22 @@
         {{ $t('signUpButton') }}</btn
       >
     </header>
+    <div class="scroll-down">
+      Scroll Down
+      <icon name="chevron-down-icon" class="down-icon" />
+    </div>
   </section>
 </template>
 
 <script>
 import Btn from '~/components/atoms/btn'
-import LocaleSelect from '~/components/molecules/locale-select'
+import Icon from '~/components/atoms/icon'
+import LocaleSelect from '~/components/atoms/locale-select'
 
 export default {
   components: {
     Btn,
+    Icon,
     LocaleSelect
   }
 }
@@ -50,6 +56,7 @@ export default {
   flex-direction: column;
   background-color: #323a4d;
   width: 100%;
+  align-items: center;
 }
 .nav {
   position: absolute;
@@ -91,8 +98,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 600px;
-  padding-bottom: 25px;
+  height: 580px;
 }
 .header .logo {
   width: 30px;
@@ -115,7 +121,22 @@ export default {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f5f6f7;
+}
+.down-icon {
+  color: #f5f6f7;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 35px;
+}
 @media screen and (max-width: 640px) {
+  .scroll-down {
+    font-size: 14px;
+  }
   .header h1 {
     font-size: 22px;
   }

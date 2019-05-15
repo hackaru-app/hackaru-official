@@ -19,6 +19,7 @@
     "hh-mm-ss": "^1.2.0",
     "nuxt": "^2.4.0",
     "nuxt-i18n": "^5.12.1",
+    "vue-feather-icons": "^4.22.0",
     "vue-timers": "^2.0.2"
   },
   "config": {

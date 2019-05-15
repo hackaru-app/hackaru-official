@@ -2,44 +2,39 @@
 
 <template>
   <section>
-    <feature class="reverse">
-      <div class="description">
-        <h1>{{ $t('tracking.title') }}</h1>
-        <p>{{ $t('tracking.description') }}</p>
-      </div>
-      <img src="~/assets/tracking.png" class="small" alt="" />
+    <feature
+      class="reverse"
+      :title="$t('tracking.title')"
+      :image="require('~/assets/tracking.png')"
+    >
+      <p>{{ $t('tracking.description') }}</p>
     </feature>
-
-    <feature>
-      <div class="description">
-        <h1>{{ $t('calendar.title') }}</h1>
-        <p>{{ $t('calendar.description') }}</p>
-      </div>
-      <img src="~/assets/calendar.png" alt="" />
+    <feature
+      :title="$t('calendar.title')"
+      :image="require('~/assets/calendar.png')"
+    >
+      <p>{{ $t('calendar.description') }}</p>
     </feature>
-
-    <feature class="reverse">
-      <div class="description">
-        <h1>{{ $t('reports.title') }}</h1>
-        <p>{{ $t('reports.description') }}</p>
-      </div>
-      <img src="~/assets/reports.png" alt="" />
+    <feature
+      class="reverse"
+      :title="$t('reports.title')"
+      :image="require('~/assets/reports.png')"
+    >
+      <p>{{ $t('reports.description') }}</p>
     </feature>
-
-    <feature>
-      <div class="description">
-        <h1>{{ $t('autoTracking.title') }}</h1>
-        <p>{{ $t('autoTracking.description') }}</p>
-        <a
-          ref="noopener"
-          href="https://github.com/ktmouk/hackaru-desktop"
-          target="_blank"
-          class="learn-more"
-          @click="$ga.event('desktop', 'features')"
-          >{{ $t('autoTracking.more') }}</a
-        >
-      </div>
-      <img src="~/assets/auto-tracking.png" alt="" />
+    <feature
+      :title="$t('autoTracking.title')"
+      :image="require('~/assets/auto-tracking.png')"
+    >
+      <p>{{ $t('autoTracking.description') }}</p>
+      <a
+        ref="noopener"
+        href="https://github.com/ktmouk/hackaru-desktop"
+        target="_blank"
+        class="learn-more"
+        @click="$ga.event('desktop', 'features')"
+        >{{ $t('autoTracking.more') }}</a
+      >
     </feature>
   </section>
 </template>
