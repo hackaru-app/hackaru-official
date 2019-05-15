@@ -34,7 +34,7 @@
 
 <script>
 import Btn from '~/components/atoms/btn'
-import LocaleSelect from '~/components/molecules/locale-select'
+import LocaleSelect from '~/components/atoms/locale-select'
 
 export default {
   components: {

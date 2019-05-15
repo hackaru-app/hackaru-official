@@ -1,8 +1,27 @@
 <template>
   <article class="feature">
-    <slot />
+    <div class="description">
+      <h1>{{ title }}</h1>
+      <slot />
+    </div>
+    <img :src="image" alt="" />
   </article>
 </template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    image: {
+      type: String,
+      required: true
+    }
+  }
+}
+</script>
 
 <style scoped>
 .feature {
@@ -43,11 +62,11 @@
   flex-shrink: 0;
   border-radius: 5px;
 }
-.feature img.small {
-  width: 300px;
-}
 .feature img {
-  width: 560px;
+  max-width: 560px;
+  max-height: 530px;
+  width: auto;
+  height: auto;
 }
 @media screen and (max-width: 1024px) {
   .feature {
