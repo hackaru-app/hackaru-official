@@ -1,8 +1,26 @@
 <template>
   <article class="other-feature">
-    <slot />
+    <div class="image-wrapper">
+      <img :src="image" alt="" />
+    </div>
+    <h1>{{ title }}</h1>
   </article>
 </template>
+
+<script>
+export default {
+  props: {
+    image: {
+      type: String,
+      required: true
+    },
+    title: {
+      type: String,
+      required: true
+    }
+  }
+}
+</script>
 
 <style scoped>
 .other-feature {

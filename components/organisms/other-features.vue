@@ -4,30 +4,19 @@
   <section class="other-features">
     <h1>{{ $t('title') }}</h1>
     <div class="other-feature-list">
-      <other-feature>
-        <div class="image-wrapper">
-          <img src="~/assets/pwa.png" alt="" />
-        </div>
-        <h1>{{ $t('pwa') }}</h1>
-      </other-feature>
-      <other-feature>
-        <div class="image-wrapper">
-          <img src="~/assets/webhook.png" alt="" />
-        </div>
-        <h1>{{ $t('webhook') }}</h1>
-      </other-feature>
-      <other-feature>
-        <div class="image-wrapper">
-          <img src="~/assets/oauth.png" alt="" />
-        </div>
-        <h1>{{ $t('oauth') }}</h1>
-      </other-feature>
-      <other-feature>
-        <div class="image-wrapper">
-          <img src="~/assets/open-source.png" alt="" />
-        </div>
-        <h1>{{ $t('openSource') }}</h1>
-      </other-feature>
+      <other-feature :image="require('~/assets/pwa.png')" :title="$t('pwa')" />
+      <other-feature
+        :image="require('~/assets/webhook.png')"
+        :title="$t('webhook')"
+      />
+      <other-feature
+        :image="require('~/assets/oauth.png')"
+        :title="$t('oauth')"
+      />
+      <other-feature
+        :image="require('~/assets/open-source.png')"
+        :title="$t('openSource')"
+      />
     </div>
   </section>
 </template>
