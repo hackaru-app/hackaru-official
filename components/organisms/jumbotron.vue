@@ -29,10 +29,10 @@
         {{ $t('signUpButton') }}</btn
       >
     </header>
-    <div class="scroll-down">
+    <a v-smooth-scroll href="#features" class="scroll-down">
       Scroll Down
       <icon name="chevron-down-icon" class="down-icon" />
-    </div>
+    </a>
   </section>
 </template>
 
@@ -123,6 +123,7 @@ export default {
 }
 .scroll-down {
   display: flex;
+  padding: 0 20px;
   flex-direction: column;
   align-items: center;
   color: #f5f6f7;

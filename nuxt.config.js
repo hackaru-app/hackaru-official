@@ -61,7 +61,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/vue-timers', ssr: false }],
+  plugins: [
+    { src: '~/plugins/vue-timers', ssr: false },
+    { src: '~/plugins/vue-smooth-scroll', ssr: false }
+  ],
 
   /*
    ** Nuxt.js modules
