@@ -30,7 +30,7 @@
       >
     </header>
     <a v-smooth-scroll href="#features" class="scroll-down">
-      Scroll Down
+      {{ $t('readMore') }}
       <icon name="chevron-down-icon" class="down-icon" />
     </a>
   </section>
@@ -98,7 +98,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 580px;
+  height: 575px;
 }
 .header .logo {
   width: 30px;
@@ -136,8 +136,9 @@ export default {
   position: relative;
   top: 0px;
   color: #f5f6f7;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
   margin-bottom: 35px;
   transition: top 0.3s ease;
 }
@@ -145,8 +146,8 @@ export default {
   top: 5px;
 }
 @media screen and (max-width: 640px) {
-  .scroll-down {
-    font-size: 14px;
+  .scroll-down:hover .down-icon {
+    top: 0;
   }
   .header h1 {
     font-size: 22px;
