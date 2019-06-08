@@ -127,12 +127,22 @@ export default {
   flex-direction: column;
   align-items: center;
   color: #f5f6f7;
+  outline: none;
+}
+.scroll-down:hover {
+  text-decoration: none;
 }
 .down-icon {
+  position: relative;
+  top: 0px;
   color: #f5f6f7;
   width: 32px;
   height: 32px;
   margin-bottom: 35px;
+  transition: top 0.3s ease;
+}
+.scroll-down:hover .down-icon {
+  top: 5px;
 }
 @media screen and (max-width: 640px) {
   .scroll-down {
