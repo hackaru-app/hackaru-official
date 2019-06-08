@@ -4,13 +4,15 @@
     "signUp": "Sign-up",
     "title": "Manage your meaningful time.",
     "description": "Open-source Time Tracking Application.",
-    "signUpButton": "Start using Hackaru"
+    "signUpButton": "Start using Hackaru",
+    "readMore": "Scroll Down"
   },
   "ja": {
     "login": "ログイン",
     "signUp": "新規登録",
     "title": "あなたの大切な時間を管理しよう",
     "description": "オープンソースなタイムトラッキングアプリ",
-    "signUpButton": "アカウント登録して開始"
+    "signUpButton": "アカウント登録して開始",
+    "readMore": "さらに詳しく"
   }
 }

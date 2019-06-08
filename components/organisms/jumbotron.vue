@@ -29,16 +29,22 @@
         {{ $t('signUpButton') }}</btn
       >
     </header>
+    <a v-smooth-scroll href="#features" class="scroll-down">
+      {{ $t('readMore') }}
+      <icon name="chevron-down-icon" class="down-icon" />
+    </a>
   </section>
 </template>
 
 <script>
 import Btn from '~/components/atoms/btn'
+import Icon from '~/components/atoms/icon'
 import LocaleSelect from '~/components/atoms/locale-select'
 
 export default {
   components: {
     Btn,
+    Icon,
     LocaleSelect
   }
 }
@@ -50,6 +56,7 @@ export default {
   flex-direction: column;
   background-color: #323a4d;
   width: 100%;
+  align-items: center;
 }
 .nav {
   position: absolute;
@@ -91,8 +98,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 600px;
-  padding-bottom: 25px;
+  height: 575px;
 }
 .header .logo {
   width: 30px;
@@ -115,7 +121,34 @@ export default {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
+.scroll-down {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  align-items: center;
+  color: #f5f6f7;
+  outline: none;
+}
+.scroll-down:hover {
+  text-decoration: none;
+}
+.down-icon {
+  position: relative;
+  top: 0px;
+  color: #f5f6f7;
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
+  margin-bottom: 35px;
+  transition: top 0.3s ease;
+}
+.scroll-down:hover .down-icon {
+  top: 5px;
+}
 @media screen and (max-width: 640px) {
+  .scroll-down:hover .down-icon {
+    top: 0;
+  }
   .header h1 {
     font-size: 22px;
   }

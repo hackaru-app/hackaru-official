@@ -1,7 +1,7 @@
 <i18n src="~/assets/locales/components/organisms/features.json" />
 
 <template>
-  <section>
+  <section id="features">
     <feature
       class="reverse"
       :title="$t('tracking.title')"
