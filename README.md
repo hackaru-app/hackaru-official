@@ -7,18 +7,14 @@
 </p>
 
 ## Contributing
-```bash
-# Fork it from https://github.com/ktmouk/hackaru-official/fork
-
-$ git clone https://github.com/XXX/hackaru-official
-$ git checkout -b new-feature
-$ yarn && yarn dev
-
-# ...Change codes...
-
-$ yarn lint .
-$ git push origin new-feature
-```
+1. [Fork](https://github.com/ktmouk/hackaru-official/fork) and clone repository.
+1. Checkout new branch. `git checkout -b new-feature`
+1. Install packages. `yarn install`
+1. Start dev server. `yarn dev`
+1. Improve codes.
+1. Run linter. `yarn lint .`
+1. Push branch. `git push origin new-feature`
+1. Create New pull request.
 
 ## Lisence
 
