@@ -16,6 +16,6 @@
 1. Push branch. `git push origin new-feature`
 1. Create new pull request.
 
-## Lisence
+## License
 
 &copy; Hackaru
