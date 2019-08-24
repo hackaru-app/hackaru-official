@@ -40,9 +40,9 @@
         <a
           ref="noopener"
           target="_blank"
-          href="https://twitter.com/hackaru"
+          href="https://twitter.com/ktmouk"
           @click="$ga.event('twitter', 'footer')"
-          >Twitter</a
+          >Developer's Twitter</a
         >
       </li>
     </ul>
