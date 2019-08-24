@@ -1,7 +1,0 @@
-version: '3'
-services:
-  official:
-    build: .
-    image: ktmouk/hackaru-official:latest
-    ports:
-      - 3636:3636
