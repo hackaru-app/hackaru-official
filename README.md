@@ -1,5 +1,5 @@
 <p align="center">
-  <p align="center"><img src="./docs/images/screenshot.png" width="700" /></p>  
+  <p align="center"><img src="./docs/images/screenshot.png" width="500" /></p>  
   <p align="center" style="color: #666;">
     Hackaru official website<br>
     <a href="https://www.hackaru.app">www.hackaru.app</a>
