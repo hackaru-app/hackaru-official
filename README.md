@@ -1,22 +1,25 @@
-# hackaru-official
+<p align="center">
+  <p align="center"><img src="./docs/images/screenshot.png" width="500" /></p>  
+  <p align="center" style="color: #666;">
+    Hackaru official website.<br>
+    <a href="https://www.hackaru.app">www.hackaru.app</a>
+  </p>
+</p>
 
-> Hackaru official website
+## Contributing
+```bash
+# Fork it from https://github.com/ktmouk/hackaru-official/fork
 
-## Build Setup
+$ git clone https://github.com/XXX/hackaru-official
+$ git checkout -b new-feature
+$ yarn && yarn dev
 
-``` bash
-# install dependencies
-$ npm install
+# ...Change codes...
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+$ yarn lint .
+$ git push origin new-feature
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Lisence
+
+&copy; Hackaru
