@@ -4,7 +4,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d789f5b0-7a26-4077-978a-205d526dbc72/deploy-status)](https://app.netlify.com/sites/vigilant-bose-6067e9/deploys)
 
 <p align="center">
-  <p align="center"><img src="./docs/images/screenshot.png" width="500" /></p>  
+  <p align="center"><img src="./docs/images/screenshot.png" width="500" /></p>
   <p align="center" style="color: #666;">
     Hackaru official website<br>
     <a href="https://www.hackaru.app">www.hackaru.app</a>
