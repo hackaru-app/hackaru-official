@@ -1,5 +1,5 @@
 <p align="center">
-  <p align="center"><img src="./docs/images/screenshot.png" width="500" /></p>  
+  <p align="center"><img src="./docs/images/screenshot.png" width="600" /></p>  
   <p align="center" style="color: #666;">
     Hackaru official website<br>
     <a href="https://www.hackaru.app">www.hackaru.app</a>
@@ -14,7 +14,7 @@
 1. Improve codes.
 1. Run linter. `yarn lint .`
 1. Push branch. `git push origin new-feature`
-1. Create New pull request.
+1. Create new pull request.
 
 ## Lisence
 
