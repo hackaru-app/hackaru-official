@@ -1,7 +1,0 @@
-version: '3'
-services:
-  official:
-    command: yarn dev
-    volumes:
-      - .:/hackaru
-      - /hackaru/node_modules
