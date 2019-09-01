@@ -1,7 +1,6 @@
 {
-  "name": "Hackaru",
-  "version": "1.0.0",
-  "description": "時間の管理を始めよう。",
+  "name": "hackaru-official",
+  "description": "Hackaru official website",
   "author": "ktmouk",
   "private": true,
   "scripts": {
