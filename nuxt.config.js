@@ -15,7 +15,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Simple, Cross-platform and Open-source Time Tracking Application.'
+          'Simple, cross-platform and open-source time tracking application.'
       },
       {
         hid: 'og:url',
@@ -76,10 +76,10 @@ export default {
       {
         locales: [{ code: 'ja', iso: 'ja_JP' }, { code: 'en', iso: 'en-US' }],
         defaultLocale: 'en',
-        vueI18n: {
-          fallbackLocale: 'en'
-        },
-        vueI18nLoader: true
+        vueI18nLoader: true,
+        detectBrowserLanguage: {
+          alwaysRedirect: true
+        }
       }
     ]
   ],
