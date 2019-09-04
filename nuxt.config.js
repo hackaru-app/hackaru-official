@@ -15,7 +15,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Simple, Cross-platform and Open-source Time Tracking Application.'
+          'Simple, cross-platform and open-source time tracking application.'
       },
       {
         hid: 'og:url',
