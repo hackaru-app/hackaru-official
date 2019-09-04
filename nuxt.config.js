@@ -79,7 +79,7 @@ export default {
         vueI18nLoader: true,
         detectBrowserLanguage: {
           alwaysRedirect: true
-        },
+        }
       }
     ]
   ],
