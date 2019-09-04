@@ -76,10 +76,10 @@ export default {
       {
         locales: [{ code: 'ja', iso: 'ja_JP' }, { code: 'en', iso: 'en-US' }],
         defaultLocale: 'en',
-        vueI18n: {
-          fallbackLocale: 'en'
+        vueI18nLoader: true,
+        detectBrowserLanguage: {
+          alwaysRedirect: true
         },
-        vueI18nLoader: true
       }
     ]
   ],
