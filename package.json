@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.2.0",
+    "cookie-universal-nuxt": "^2.0.17",
     "cross-env": "^5.2.1",
     "date-fns": "^2.0.1",
     "hh-mm-ss": "^1.2.0",

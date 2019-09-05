@@ -4,6 +4,24 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted() {
+    if (!process.browser) return
+    this.$router.push(
+      this.switchLocalePath(
+        this.$cookies.get('i18n_redirected') || this.getBrowserLocale()
+      )
+    )
+  },
+  methods: {
+    getBrowserLocale() {
+      return navigator.language.toLocaleLowerCase().substring(0, 2)
+    }
+  }
+}
+</script>
+
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
