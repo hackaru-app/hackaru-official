@@ -1,5 +1,5 @@
 <template>
-  <select v-model="$i18n.locale" class="select">
+  <select :value="$i18n.locale" class="select" @change="change">
     <option v-for="(locale, i) in locales" :key="i" :value="locale.value">
       {{ locale.title }}
     </option>
@@ -14,6 +14,12 @@ export default {
         { title: 'English', value: 'en' },
         { title: '日本語', value: 'ja' }
       ]
+    }
+  },
+  methods: {
+    change(event) {
+      this.$i18n.setLocaleCookie(event.target.value)
+      this.$router.push(this.switchLocalePath(event.target.value))
     }
   }
 }
