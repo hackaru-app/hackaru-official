@@ -70,6 +70,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    'cookie-universal-nuxt',
     '@nuxtjs/google-analytics',
     [
       'nuxt-i18n',
