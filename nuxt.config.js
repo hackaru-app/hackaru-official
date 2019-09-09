@@ -71,7 +71,6 @@ export default {
    */
   modules: [
     'cookie-universal-nuxt',
-    '@nuxtjs/google-analytics',
     [
       'nuxt-i18n',
       {
@@ -84,10 +83,6 @@ export default {
       }
     ]
   ],
-
-  googleAnalytics: {
-    id: 'UA-137391422-4'
-  },
 
   /*
    ** Build configuration
