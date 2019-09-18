@@ -19,7 +19,7 @@
     "nuxt-i18n": "^6.2.1",
     "vue-feather-icons": "^5.0.0",
     "vue-smooth-scroll": "^1.0.13",
-    "vue-timers": "^2.0.2"
+    "vue-timers": "^2.0.4"
   },
   "lint-staged": {
     "*.{js,vue}": [
