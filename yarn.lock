@@ -8741,9 +8741,9 @@ webpack-dev-middleware@^3.7.0:
     webpack-log "^2.0.0"
 
 webpack-external-import@^0.0.1-beta.19:
-  version "0.0.1-beta.29"
-  resolved "https://registry.yarnpkg.com/webpack-external-import/-/webpack-external-import-0.0.1-beta.29.tgz#66f70e47ce810de99b274ff1692e3cede2f8d389"
-  integrity sha512-alyK1XbtpicyihwhtyPPWQnEPltqaO2DluWLCwlcLdzCorTkjD1KwZSzzN6ZIkUVHBo5eFRwKSto4GXHDeLYbA==
+  version "0.0.1-beta.30"
+  resolved "https://registry.yarnpkg.com/webpack-external-import/-/webpack-external-import-0.0.1-beta.30.tgz#aa1c1850faf4a2b09c3c753ed1ff4ee9540d8b2d"
+  integrity sha512-DiXS9SIeo2LYgo6OtN1nVnzdW7w7b23DC/H0d4wX5hIVIP66XQJbuZ7PrcADSCIs6yVPA/TOGaKuqOYJJFG6Sg==
   dependencies:
     "@babel/helper-module-imports" "^7.0.0"
     babel-traverse "^6.26.0"
