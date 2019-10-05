@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "cookie-universal-nuxt": "^2.0.18",
-    "cross-env": "^6.0.0",
+    "cross-env": "^6.0.3",
     "date-fns": "^2.4.1",
     "hh-mm-ss": "^1.2.0",
     "nuxt": "^2.9.2",
