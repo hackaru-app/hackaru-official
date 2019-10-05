@@ -15,7 +15,7 @@
     "cross-env": "^6.0.3",
     "date-fns": "^2.4.1",
     "hh-mm-ss": "^1.2.0",
-    "nuxt": "^2.9.2",
+    "nuxt": "^2.10.0",
     "nuxt-i18n": "^6.3.0",
     "vue-feather-icons": "^5.0.0",
     "vue-smooth-scroll": "^1.0.13",
