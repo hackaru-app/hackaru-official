@@ -3,45 +3,45 @@
 <template>
   <footer class="footer">
     <btn
+      @click="$ga.event('signUp', 'footer')"
       href="https://app.hackaru.app/auth?sign-up=true"
       class="btn"
-      @click="$ga.event('signUp', 'footer')"
       >{{ $t('signUpButton') }}</btn
     >
     <ul class="footer-menu">
       <li>
         <a
           ref="noopener"
+          @click="$ga.event('terms', 'footer')"
           target="_blank"
           href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md"
-          @click="$ga.event('terms', 'footer')"
           >{{ $t('termOfService') }}</a
         >
       </li>
       <li>
         <a
           ref="noopener"
+          @click="$ga.event('privacy', 'footer')"
           target="_blank"
           href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md"
-          @click="$ga.event('privacy', 'footer')"
           >{{ $t('privacyPolicy') }}</a
         >
       </li>
       <li>
         <a
           ref="noopener"
+          @click="$ga.event('github', 'footer')"
           target="_blank"
           href="https://github.com/ktmouk/hackaru"
-          @click="$ga.event('github', 'footer')"
           >GitHub</a
         >
       </li>
       <li>
         <a
           ref="noopener"
+          @click="$ga.event('twitter', 'footer')"
           target="_blank"
           href="https://twitter.com/ktmouk"
-          @click="$ga.event('twitter', 'footer')"
           >Developer's Twitter</a
         >
       </li>
