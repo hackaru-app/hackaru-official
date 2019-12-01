@@ -74,7 +74,10 @@ export default {
     [
       'nuxt-i18n',
       {
-        locales: [{ code: 'ja', iso: 'ja_JP' }, { code: 'en', iso: 'en-US' }],
+        locales: [
+          { code: 'ja', iso: 'ja_JP' },
+          { code: 'en', iso: 'en-US' }
+        ],
         defaultLocale: 'en',
         vueI18nLoader: true,
         detectBrowserLanguage: {
