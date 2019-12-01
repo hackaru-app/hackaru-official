@@ -3,9 +3,9 @@
 <template>
   <section id="features">
     <feature
-      class="reverse"
       :title="$t('tracking.title')"
       :image="require('~/assets/tracking.png')"
+      class="reverse"
     >
       <p>{{ $t('tracking.description') }}</p>
     </feature>
@@ -16,9 +16,9 @@
       <p>{{ $t('calendar.description') }}</p>
     </feature>
     <feature
-      class="reverse"
       :title="$t('reports.title')"
       :image="require('~/assets/reports.png')"
+      class="reverse"
     >
       <p>{{ $t('reports.description') }}</p>
     </feature>
@@ -29,10 +29,10 @@
       <p>{{ $t('autoTracking.description') }}</p>
       <a
         ref="noopener"
+        @click="$ga.event('desktop', 'features')"
         href="https://github.com/ktmouk/hackaru-desktop"
         target="_blank"
         class="learn-more"
-        @click="$ga.event('desktop', 'features')"
         >{{ $t('autoTracking.more') }}</a
       >
     </feature>

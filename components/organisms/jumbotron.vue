@@ -7,15 +7,15 @@
       <ul>
         <li>
           <a
-            href="https://app.hackaru.app/auth"
             @click="$ga.event('login', 'header')"
+            href="https://app.hackaru.app/auth"
             >{{ $t('login') }}</a
           >
         </li>
         <li>
           <a
-            href="https://app.hackaru.app/auth?sign-up=true"
             @click="$ga.event('signUp', 'header')"
+            href="https://app.hackaru.app/auth?sign-up=true"
             >{{ $t('signUp') }}</a
           >
         </li>
