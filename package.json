@@ -16,7 +16,7 @@
     "date-fns": "^2.8.1",
     "hh-mm-ss": "^1.2.0",
     "nuxt": "^2.10.2",
-    "nuxt-i18n": "^6.4.0",
+    "nuxt-i18n": "^6.4.1",
     "vue-feather-icons": "^5.0.0",
     "vue-smooth-scroll": "^1.0.13",
     "vue-timers": "^2.0.4"
