@@ -1,5 +1,5 @@
 <template>
-  <select :value="$i18n.locale" @change="change" class="select">
+  <select :value="$i18n.locale" class="select" @change="change">
     <option v-for="(locale, i) in locales" :key="i" :value="locale.value">
       {{ locale.title }}
     </option>
