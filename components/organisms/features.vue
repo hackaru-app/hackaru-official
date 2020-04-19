@@ -44,8 +44,8 @@ import Feature from '~/components/molecules/feature'
 
 export default {
   components: {
-    Feature
-  }
+    Feature,
+  },
 }
 </script>
 

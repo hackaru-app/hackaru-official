@@ -26,8 +26,8 @@ import OtherFeature from '~/components/molecules/other-feature'
 
 export default {
   components: {
-    OtherFeature
-  }
+    OtherFeature,
+  },
 }
 </script>
 

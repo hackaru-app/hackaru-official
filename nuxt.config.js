@@ -15,37 +15,37 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Simple, cross-platform and open-source time tracking application.'
+          'Simple, cross-platform and open-source time tracking application.',
       },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://www.hackaru.app/'
+        content: 'https://www.hackaru.app/',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Hackaru | Open-source Time Tracking Application'
+        content: 'Hackaru | Open-source Time Tracking Application',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Simple, Cross-platform and Open-source Time Tracking Application.'
+          'Simple, Cross-platform and Open-source Time Tracking Application.',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.hackaru.app/ogp.png'
-      }
+        content: 'https://www.hackaru.app/ogp.png',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400'
-      }
-    ]
+        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400',
+      },
+    ],
   },
 
   /*
@@ -63,7 +63,7 @@ export default {
    */
   plugins: [
     { src: '~/plugins/vue-timers', ssr: false },
-    { src: '~/plugins/vue-smooth-scroll', ssr: false }
+    { src: '~/plugins/vue-smooth-scroll', ssr: false },
   ],
 
   /*
@@ -76,15 +76,15 @@ export default {
       {
         locales: [
           { code: 'ja', iso: 'ja_JP' },
-          { code: 'en', iso: 'en-US' }
+          { code: 'en', iso: 'en-US' },
         ],
         defaultLocale: 'en',
         vueI18nLoader: true,
         detectBrowserLanguage: {
-          alwaysRedirect: true
-        }
-      }
-    ]
+          alwaysRedirect: true,
+        },
+      },
+    ],
   ],
 
   /*
@@ -101,9 +101,9 @@ export default {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
-    }
-  }
+    },
+  },
 }

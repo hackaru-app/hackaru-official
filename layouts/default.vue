@@ -17,8 +17,8 @@ export default {
   methods: {
     getBrowserLocale() {
       return navigator.language.toLocaleLowerCase().substring(0, 2)
-    }
-  }
+    },
+  },
 }
 </script>
 

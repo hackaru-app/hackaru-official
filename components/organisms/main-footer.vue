@@ -54,8 +54,8 @@ import Btn from '~/components/atoms/btn'
 
 export default {
   components: {
-    Btn
-  }
+    Btn,
+  },
 }
 </script>
 
