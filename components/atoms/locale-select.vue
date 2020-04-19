@@ -12,16 +12,16 @@ export default {
     return {
       locales: [
         { title: 'English', value: 'en' },
-        { title: '日本語', value: 'ja' }
-      ]
+        { title: '日本語', value: 'ja' },
+      ],
     }
   },
   methods: {
     change(event) {
       this.$i18n.setLocaleCookie(event.target.value)
       this.$router.push(this.switchLocalePath(event.target.value))
-    }
-  }
+    },
+  },
 }
 </script>
 

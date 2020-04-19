@@ -45,8 +45,8 @@ export default {
   components: {
     Btn,
     Icon,
-    LocaleSelect
-  }
+    LocaleSelect,
+  },
 }
 </script>
 
