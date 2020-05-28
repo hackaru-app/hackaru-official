@@ -60,6 +60,7 @@ export default {
 }
 .nav {
   position: absolute;
+  left: 0;
   justify-content: space-between;
   width: 100%;
   display: flex;
