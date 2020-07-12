@@ -13,7 +13,7 @@
   "dependencies": {
     "cookie-universal-nuxt": "^2.1.0",
     "cross-env": "^7.0.2",
-    "date-fns": "^2.9.0",
+    "date-fns": "^2.14.0",
     "hh-mm-ss": "^1.2.0",
     "nuxt": "^2.10.2",
     "nuxt-i18n": "^6.11.0",
