@@ -6,10 +6,6 @@
     <div class="other-feature-list">
       <other-feature :image="require('~/assets/pwa.png')" :title="$t('pwa')" />
       <other-feature
-        :image="require('~/assets/webhook.png')"
-        :title="$t('webhook')"
-      />
-      <other-feature
         :image="require('~/assets/oauth.png')"
         :title="$t('oauth')"
       />
