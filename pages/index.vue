@@ -1,5 +1,6 @@
 <template>
   <section class="wrapper">
+    <latest-news />
     <jumbotron />
     <section class="content">
       <features />
@@ -10,6 +11,7 @@
 </template>
 
 <script>
+import LatestNews from '~/components/organisms/latest-news'
 import Jumbotron from '~/components/organisms/jumbotron'
 import MainFooter from '~/components/organisms/main-footer'
 import Features from '~/components/organisms/features'
@@ -17,6 +19,7 @@ import OtherFeatures from '~/components/organisms/other-features'
 
 export default {
   components: {
+    LatestNews,
     Jumbotron,
     MainFooter,
     Features,
