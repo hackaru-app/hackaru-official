@@ -1,4 +1,4 @@
-<i18n src="~/assets/locales/components/organisms/other-features.json" />
+<i18n src="~/assets/locales/components/organisms/other-features.json"></i18n>
 
 <template>
   <section class="other-features">

@@ -1,4 +1,4 @@
-<i18n src="~/assets/locales/components/organisms/jumbotron.json" />
+<i18n src="~/assets/locales/components/organisms/jumbotron.json"></i18n>
 
 <template>
   <section class="jumbotron">
@@ -7,15 +7,15 @@
       <ul>
         <li>
           <a
+            v-track-links="['Click login', { components: 'jumbotron' }]"
             href="https://app.hackaru.app/auth"
-            @click="$ga.event('login', 'header')"
             >{{ $t('login') }}</a
           >
         </li>
         <li>
           <a
+            v-track-links="['Click sign up', { components: 'jumbotron' }]"
             href="https://app.hackaru.app/auth?sign-up=true"
-            @click="$ga.event('signUp', 'header')"
             >{{ $t('signUp') }}</a
           >
         </li>
@@ -25,11 +25,19 @@
       <img src="~/assets/logo.svg" class="logo" alt="" />
       <h1>{{ $t('title') }}</h1>
       <p>{{ $t('description') }}</p>
-      <btn href="https://app.hackaru.app/auth?sign-up=true">
+      <btn
+        v-track-links="['Click sign up', { components: 'jumbotron' }]"
+        href="https://app.hackaru.app/auth?sign-up=true"
+      >
         {{ $t('signUpButton') }}</btn
       >
     </header>
-    <a v-smooth-scroll href="#features" class="scroll-down">
+    <a
+      v-smooth-scroll
+      v-track-links="['Click scroll-down', { components: 'jumbotron' }]"
+      href="#features"
+      class="scroll-down"
+    >
       {{ $t('readMore') }}
       <icon name="chevron-down-icon" class="down-icon" />
     </a>
