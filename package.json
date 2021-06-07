@@ -15,6 +15,7 @@
     "cross-env": "^7.0.2",
     "date-fns": "^2.22.1",
     "hh-mm-ss": "^1.2.0",
+    "mixpanel-browser": "^2.41.0",
     "nuxt": "^2.14.9",
     "nuxt-i18n": "^6.13.1",
     "vue-feather-icons": "^5.0.0",

@@ -1,4 +1,4 @@
-<i18n src="~/assets/locales/components/organisms/features.json" />
+<i18n src="~/assets/locales/components/organisms/features.json"></i18n>
 
 <template>
   <section id="features">
@@ -29,10 +29,13 @@
       <p>{{ $t('autoTracking.description') }}</p>
       <a
         ref="noopener"
-        href="https://github.com/ktmouk/hackaru-desktop"
+        v-track-links="[
+          'Click learn-more of desktop',
+          { components: 'features' },
+        ]"
+        href="https://github.com/hackaru-app/hackaru-desktop"
         target="_blank"
         class="learn-more"
-        @click="$ga.event('desktop', 'features')"
         >{{ $t('autoTracking.more') }}</a
       >
     </feature>

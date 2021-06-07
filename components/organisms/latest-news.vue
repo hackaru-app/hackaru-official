@@ -3,6 +3,7 @@
 <template>
   <section class="latest-news">
     <a
+      v-track-links="['Click latest news', { components: 'latest-news' }]"
       href="https://github.com/hackaru-app/hackaru-terms/blob/master/privacy-policy.md"
       target="_blank"
       rel="noopener noreferrer"
@@ -19,12 +20,6 @@ import Icon from '~/components/atoms/icon'
 export default {
   components: {
     Icon,
-  },
-  props: {
-    date: {
-      type: String,
-      required: true,
-    },
   },
 }
 </script>

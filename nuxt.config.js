@@ -64,6 +64,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue-timers', ssr: false },
     { src: '~/plugins/vue-smooth-scroll', ssr: false },
+    { src: '~/plugins/mixpanel', ssr: false },
   ],
 
   /*
@@ -86,7 +87,9 @@ export default {
       },
     ],
   ],
-
+  publicRuntimeConfig: {
+    mixpanelProjectToken: process.env.MIXPANEL_PROJECT_TOKEN,
+  },
   /*
    ** Build configuration
    */

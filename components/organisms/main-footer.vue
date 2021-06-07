@@ -1,47 +1,50 @@
-<i18n src="~/assets/locales/components/organisms/main-footer.json" />
+<i18n src="~/assets/locales/components/organisms/main-footer.json"></i18n>
 
 <template>
   <footer class="footer">
     <btn
+      v-track-links="['Click sign up', { components: 'main-footer' }]"
       href="https://app.hackaru.app/auth?sign-up=true"
       class="btn"
-      @click="$ga.event('signUp', 'footer')"
       >{{ $t('signUpButton') }}</btn
     >
     <ul class="footer-menu">
       <li>
         <a
           ref="noopener"
+          v-track-links="['Click terms', { components: 'main-footer' }]"
           target="_blank"
-          href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/term-of-service.md"
-          @click="$ga.event('terms', 'footer')"
+          href="https://github.com/hackaru-app/hackaru-terms/blob/master/term-of-service.md"
           >{{ $t('termOfService') }}</a
         >
       </li>
       <li>
         <a
           ref="noopener"
+          v-track-links="[
+            'Click privacy policy',
+            { components: 'main-footer' },
+          ]"
           target="_blank"
-          href="https://github.com/ktmouk/hackaru-terms-and-policies/blob/master/privacy-policy.md"
-          @click="$ga.event('privacy', 'footer')"
+          href="https://github.com/hackaru-app/hackaru-terms/blob/master/privacy-policy.md"
           >{{ $t('privacyPolicy') }}</a
         >
       </li>
       <li>
         <a
           ref="noopener"
+          v-track-links="['Click github', { components: 'main-footer' }]"
           target="_blank"
-          href="https://github.com/ktmouk/hackaru"
-          @click="$ga.event('github', 'footer')"
+          href="https://github.com/hackaru-app/hackaru"
           >GitHub</a
         >
       </li>
       <li>
         <a
           ref="noopener"
+          v-track-links="['Click twitter', { components: 'main-footer' }]"
           target="_blank"
           href="https://twitter.com/ktmouk"
-          @click="$ga.event('twitter', 'footer')"
           >Developer's Twitter</a
         >
       </li>
