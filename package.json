@@ -11,7 +11,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "cookie-universal-nuxt": "^2.1.4",
+    "cookie-universal-nuxt": "^2.1.5",
     "cross-env": "^7.0.2",
     "date-fns": "^2.22.1",
     "hh-mm-ss": "^1.2.0",
