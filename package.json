@@ -13,7 +13,7 @@
   "dependencies": {
     "cookie-universal-nuxt": "^2.1.5",
     "cross-env": "^7.0.2",
-    "date-fns": "^2.22.1",
+    "date-fns": "^2.23.0",
     "hh-mm-ss": "^1.2.0",
     "mixpanel-browser": "^2.41.0",
     "nuxt": "^2.15.7",
