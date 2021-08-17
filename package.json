@@ -16,7 +16,7 @@
     "date-fns": "^2.23.0",
     "hh-mm-ss": "^1.2.0",
     "mixpanel-browser": "^2.41.0",
-    "nuxt": "^2.15.7",
+    "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.28.0",
     "vue-feather-icons": "^5.0.0",
     "vue-smooth-scroll": "^1.0.13",
