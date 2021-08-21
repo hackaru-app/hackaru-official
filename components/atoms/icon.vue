@@ -20,21 +20,21 @@ export default {
 
 <style scoped>
 .icon {
-  width: 20px;
   height: 20px;
   vertical-align: bottom;
+  width: 20px;
 }
 .icon.is-small {
-  width: 16px;
   height: 16px;
+  width: 16px;
 }
 .icon.is-large {
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 .icon.is-x-large {
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 .icon.is-primary {
   color: $cyan;

@@ -41,10 +41,10 @@ a:hover {
   text-decoration: underline;
 }
 .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 </style>

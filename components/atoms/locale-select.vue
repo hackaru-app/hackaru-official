@@ -27,16 +27,16 @@ export default {
 
 <style scoped>
 .select {
-  color: #fff;
-  font-size: 16px;
-  border-radius: 3px;
-  display: flex;
-  border: 0;
-  background: none;
-  padding: 3px 0;
-  border-bottom: 1px #fff solid;
-  border-radius: 0;
   -webkit-appearance: none;
   appearance: none;
+  background: none;
+  border: 0;
+  border-bottom: 1px #fff solid;
+  border-radius: 3px;
+  border-radius: 0;
+  color: #fff;
+  display: flex;
+  font-size: 16px;
+  padding: 3px 0;
 }
 </style>

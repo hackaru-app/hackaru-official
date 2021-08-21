@@ -60,26 +60,26 @@ export default {
 
 <style scoped>
 .jumbotron {
+  align-items: center;
+  background-color: #323a4d;
   display: flex;
   flex-direction: column;
-  background-color: #323a4d;
   width: 100%;
-  align-items: center;
 }
 .nav {
-  position: absolute;
-  left: 0;
-  justify-content: space-between;
-  width: 100%;
+  align-items: baseline;
   display: flex;
+  justify-content: space-between;
+  left: 0;
   padding: 25px 20px;
   padding-left: 30px;
-  align-items: baseline;
+  position: absolute;
+  width: 100%;
 }
 .nav ul {
   display: flex;
-  list-style: none;
   justify-content: flex-end;
+  list-style: none;
   list-style-position: inside;
 }
 .nav li a {
@@ -87,69 +87,69 @@ export default {
   padding: 10px 15px;
   text-decoration: none;
 }
+.nav .sign-in a {
+  border: 0;
+  border: 2px #ffd96a solid;
+  border-radius: 3px;
+  color: #ffd96a;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 20px;
+  text-decoration: none;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
 .nav li a:hover {
   text-decoration: underline;
 }
-.nav .sign-in a {
-  border: 0;
-  border-radius: 3px;
-  text-decoration: none;
-  padding: 8px 20px;
-  color: #ffd96a;
-  font-weight: 400;
-  font-size: 14px;
-  border: 2px #ffd96a solid;
-  transition: all 0.3s ease;
-  transform: scale(1);
-}
 .header {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 575px;
+  justify-content: center;
 }
 .header .logo {
-  width: 30px;
   height: 30px;
+  width: 30px;
 }
 .header h1 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-weight: 300;
   margin: 20px 0;
   margin-bottom: 10px;
-  font-weight: normal;
-  color: #fff;
-  font-size: 32px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
 }
 .header p {
   color: #ccc;
-  font-size: 18px;
-  margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 .scroll-down {
-  display: flex;
-  padding: 0 20px;
-  flex-direction: column;
   align-items: center;
   color: #f5f6f7;
+  display: flex;
+  flex-direction: column;
   outline: none;
+  padding: 0 20px;
 }
 .scroll-down:hover {
   text-decoration: none;
 }
 .down-icon {
-  position: relative;
-  top: 0px;
   color: #f5f6f7;
-  width: 28px;
   height: 28px;
-  margin-top: 2px;
   margin-bottom: 35px;
+  margin-top: 2px;
+  position: relative;
+  top: 0;
   transition: top 0.3s ease;
+  width: 28px;
 }
 .scroll-down:hover .down-icon {
   top: 5px;

@@ -27,9 +27,9 @@ export default {
 <style scoped>
 .latest-news {
   border-bottom: 1px solid #2e3647;
-  text-align: center;
-  padding: 10px 0;
   font-size: 14px;
+  padding: 10px 0;
+  text-align: center;
 }
 .news-icon {
   margin-right: 10px;
