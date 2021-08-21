@@ -24,27 +24,27 @@ export default {
 
 <style scoped>
 .other-feature {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   margin: 0 20px;
 }
 .other-feature h1 {
   font-size: 16px;
   font-weight: 200;
-  padding: 20px;
   margin-bottom: 20px;
+  padding: 20px;
 }
 .other-feature .image-wrapper {
-  display: block;
-  width: 180px;
-  background-color: #00000011;
-  border-radius: 10px;
-  height: 180px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: #0001;
+  border-radius: 10px;
+  display: block;
+  display: flex;
+  height: 180px;
+  justify-content: center;
+  width: 180px;
 }
 .other-feature img {
   width: 80px;

@@ -64,11 +64,11 @@ export default {
 
 <style scoped>
 .footer {
+  align-items: center;
+  background-color: #0001;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: #00000011;
 }
 .footer .btn {
   margin: 150px 0;
@@ -80,9 +80,9 @@ export default {
   padding: 0;
 }
 .footer-menu a {
+  color: #f5f6f7;
   padding: 0 10px;
   text-decoration: none;
-  color: #f5f6f7;
 }
 .footer-menu a:hover {
   text-decoration: underline;
@@ -95,11 +95,11 @@ export default {
     width: 100%;
   }
   .footer-menu a {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px 0;
     border-top: 1px #00000020 solid;
+    box-sizing: border-box;
+    display: block;
+    padding: 20px 0;
+    width: 100%;
   }
 }
 </style>

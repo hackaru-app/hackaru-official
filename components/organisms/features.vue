@@ -54,10 +54,10 @@ export default {
 
 <style scoped>
 a.learn-more {
+  align-self: flex-start;
   color: #ffd96a;
   font-size: 16px;
   margin-top: 10px;
-  align-self: flex-start;
 }
 @media screen and (max-width: 1024px) {
   a.learn-more {

@@ -29,18 +29,18 @@ export default {
 
 <style scoped>
 .other-features {
-  max-width: 100%;
-  width: 100%;
-  padding: 100px 0;
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  max-width: 100%;
+  padding: 100px 0;
+  width: 100%;
 }
 .other-features > h1 {
-  font-size: 32px;
-  margin-bottom: 80px;
-  font-weight: 200;
   color: #fff;
+  font-size: 32px;
+  font-weight: 200;
+  margin-bottom: 80px;
 }
 .other-feature-list {
   display: flex;

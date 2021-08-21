@@ -25,66 +25,64 @@ export default {
 
 <style scoped>
 .feature {
-  border-bottom: 1px #00000011 solid;
-  padding: 100px 0;
-  max-width: 860px;
-  width: 100%;
+  align-items: center;
+  border-bottom: 1px #0001 solid;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  max-width: 860px;
+  padding: 100px 0;
+  width: 100%;
+}
+.feature .description {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  width: 420px;
 }
 .feature.reverse .description {
   order: 2;
 }
-.feature.reverse img {
-  order: 1;
-  margin-right: 50px;
+.feature img {
+  border-radius: 5px;
+  flex-shrink: 0;
+  height: auto;
+  max-height: 530px;
+  max-width: 560px;
+  width: auto;
 }
-.feature .description {
-  display: flex;
-  width: 420px;
-  flex-direction: column;
+.feature.reverse img {
   margin-right: 50px;
+  order: 1;
 }
 .feature h1 {
+  border-bottom: 1px #ffd96a solid;
+  color: #fff;
   font-size: 32px;
   font-weight: 200;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px #ffd96a solid;
-  color: #fff;
 }
 .feature p {
-  line-height: 1.5;
   color: #cdd0d1;
-}
-.feature img {
-  flex-shrink: 0;
-  border-radius: 5px;
-}
-.feature img {
-  max-width: 560px;
-  max-height: 530px;
-  width: auto;
-  height: auto;
+  line-height: 1.5;
 }
 @media screen and (max-width: 1024px) {
   .feature {
-    padding: 30px;
     box-sizing: border-box;
-    width: 100%;
-    margin-top: 50px;
     flex-direction: column;
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
   }
   .feature.reverse img {
-    order: 2;
     margin-right: 0;
+    order: 2;
   }
   .feature .description {
-    width: 100%;
     margin: 0;
-    text-align: center;
     margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
   }
 }
 @media screen and (max-width: 640px) {
@@ -92,10 +90,10 @@ export default {
     font-size: 28px;
   }
   .feature .description {
-    width: 100%;
     margin: 0;
-    text-align: center;
     margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
   }
   .feature img {
     width: 300px !important;
