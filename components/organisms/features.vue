@@ -60,7 +60,7 @@ a.download {
   margin-top: 10px;
 }
 @media screen and (max-width: 1024px) {
-  a.learn-more {
+  a.download {
     align-self: center;
   }
 }
