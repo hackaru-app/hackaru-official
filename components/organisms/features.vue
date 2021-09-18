@@ -24,7 +24,7 @@
     </feature>
     <feature
       :title="$t('autoTracking.title')"
-      :image="require('~/assets/auto-tracking.png')"
+      :image="require('~/assets/desktop.png')"
     >
       <p>{{ $t('autoTracking.description') }}</p>
       <a
@@ -33,10 +33,10 @@
           'Click learn-more of desktop',
           { components: 'features' },
         ]"
-        href="https://github.com/hackaru-app/hackaru-desktop"
+        href="https://github.com/hackaru-app/hackaru-desktop#download"
         target="_blank"
-        class="learn-more"
-        >{{ $t('autoTracking.more') }}</a
+        class="download"
+        >{{ $t('autoTracking.download') }}</a
       >
     </feature>
   </section>
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style scoped>
-a.learn-more {
+a.download {
   align-self: flex-start;
   color: #ffd96a;
   font-size: 16px;

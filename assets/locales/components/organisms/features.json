@@ -13,9 +13,9 @@
       "description": "You can use the report to analyze activities."
     },
     "autoTracking": {
-      "title": "Auto Tracking",
-      "description": "By installing the desktop version, you can automatically measure the time you are using your favorite applications like Atom, Sketch, Photoshop.",
-      "more": "See Desktop version"
+      "title": "For desktop",
+      "description": "By installing the desktop app, you can quickly measure the time from the menu-bar. Supports Windows, Mac and Linux.",
+      "download": "Download (Go to GitHub)"
     }
   },
   "ja": {
@@ -32,9 +32,9 @@
       "description": "円グラフやバーチャートで、計測した時間を分析することができます。"
     },
     "autoTracking": {
-      "title": "自動で計測",
-      "description": "デスクトップ版をインストールすれば、PhotoshopやAtomエディタなど、お気に入りのアプリケーションを使っている時間を自動で計測できます。",
-      "more": "デスクトップ版を詳しく見る"
+      "title": "デスクトップ版",
+      "description": "デスクトップ版のアプリをインストールすれば、メニューバーから素早く計測を開始できます。Windows、Mac、Linuxに対応。",
+      "download": "ダウンロード（GitHubに移動します）"
     }
   }
 }
