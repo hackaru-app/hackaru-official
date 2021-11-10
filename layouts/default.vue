@@ -7,7 +7,6 @@
 <script>
 export default {
   mounted() {
-    if (!process.browser) return
     this.$router.push(
       this.switchLocalePath(
         this.$cookies.get('i18n_redirected') || this.getBrowserLocale()
