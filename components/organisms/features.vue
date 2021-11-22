@@ -52,13 +52,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 a.download {
   align-self: flex-start;
   color: #ffd96a;
   font-size: 16px;
   margin-top: 10px;
 }
+
 @media screen and (max-width: 1024px) {
   a.download {
     align-self: center;

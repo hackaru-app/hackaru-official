@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .other-features {
   align-items: center;
   display: flex;
@@ -36,12 +36,14 @@ export default {
   padding: 100px 0;
   width: 100%;
 }
+
 .other-features > h1 {
   color: #fff;
   font-size: 32px;
   font-weight: 200;
   margin-bottom: 80px;
 }
+
 .other-feature-list {
   display: flex;
   flex-wrap: wrap;

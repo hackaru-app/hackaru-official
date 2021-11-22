@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .footer {
   align-items: center;
   background-color: #0001;
@@ -70,23 +70,28 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
+
 .footer .btn {
   margin: 150px 0;
 }
+
 .footer-menu {
   display: flex;
   list-style: none;
   margin-bottom: 40px;
   padding: 0;
 }
+
 .footer-menu a {
   color: #f5f6f7;
   padding: 0 10px;
   text-decoration: none;
 }
+
 .footer-menu a:hover {
   text-decoration: underline;
 }
+
 @media screen and (max-width: 640px) {
   .footer-menu {
     display: flex;
@@ -94,6 +99,7 @@ export default {
     text-align: center;
     width: 100%;
   }
+
   .footer-menu a {
     border-top: 1px #00000020 solid;
     box-sizing: border-box;

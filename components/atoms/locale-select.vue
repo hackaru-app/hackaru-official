@@ -25,9 +25,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .select {
-  -webkit-appearance: none;
   appearance: none;
   background: none;
   border: 0;
