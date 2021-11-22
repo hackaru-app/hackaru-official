@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .other-feature {
   align-items: center;
   box-sizing: border-box;
@@ -30,12 +30,14 @@ export default {
   flex-direction: column;
   margin: 0 20px;
 }
+
 .other-feature h1 {
   font-size: 16px;
   font-weight: 200;
   margin-bottom: 20px;
   padding: 20px;
 }
+
 .other-feature .image-wrapper {
   align-items: center;
   background-color: #0001;
@@ -46,6 +48,7 @@ export default {
   justify-content: center;
   width: 180px;
 }
+
 .other-feature img {
   width: 80px;
 }

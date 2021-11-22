@@ -58,7 +58,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .jumbotron {
   align-items: center;
   background-color: #323a4d;
@@ -66,6 +66,7 @@ export default {
   flex-direction: column;
   width: 100%;
 }
+
 .nav {
   align-items: baseline;
   display: flex;
@@ -76,17 +77,20 @@ export default {
   position: absolute;
   width: 100%;
 }
+
 .nav ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
   list-style-position: inside;
 }
+
 .nav li a {
   color: #f5f6f7;
   padding: 10px 15px;
   text-decoration: none;
 }
+
 .nav .sign-in a {
   border: 0;
   border: 2px #ffd96a solid;
@@ -99,9 +103,11 @@ export default {
   transform: scale(1);
   transition: all 0.3s ease;
 }
+
 .nav li a:hover {
   text-decoration: underline;
 }
+
 .header {
   align-items: center;
   display: flex;
@@ -109,10 +115,12 @@ export default {
   height: 575px;
   justify-content: center;
 }
+
 .header .logo {
   height: 30px;
   width: 30px;
 }
+
 .header h1 {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
@@ -123,6 +131,7 @@ export default {
   margin-bottom: 10px;
   text-align: center;
 }
+
 .header p {
   color: #ccc;
   font-family: 'Open Sans', sans-serif;
@@ -130,6 +139,7 @@ export default {
   font-weight: 400;
   margin-bottom: 20px;
 }
+
 .scroll-down {
   align-items: center;
   color: #f5f6f7;
@@ -138,9 +148,11 @@ export default {
   outline: none;
   padding: 0 20px;
 }
+
 .scroll-down:hover {
   text-decoration: none;
 }
+
 .down-icon {
   color: #f5f6f7;
   height: 28px;
@@ -151,16 +163,20 @@ export default {
   transition: top 0.3s ease;
   width: 28px;
 }
+
 .scroll-down:hover .down-icon {
   top: 5px;
 }
+
 @media screen and (max-width: 640px) {
   .scroll-down:hover .down-icon {
     top: 0;
   }
+
   .header h1 {
     font-size: 22px;
   }
+
   .header p {
     font-size: 14px;
   }

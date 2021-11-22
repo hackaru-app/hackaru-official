@@ -33,13 +33,16 @@ body {
   background-color: #2e3647;
   font-size: 16px;
 }
+
 a {
   color: #f5f6f7;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .content {
   align-items: center;
   color: #fff;

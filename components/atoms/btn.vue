@@ -2,7 +2,7 @@
   <a><slot /></a>
 </template>
 
-<style scoped>
+<style scoped lang="css">
 a {
   background-color: #ffd96a;
   border: 0;
@@ -14,10 +14,12 @@ a {
   transform: scale(1);
   transition: all 0.3s ease;
 }
+
 a:hover {
   text-decoration: none;
   transform: scale(1.05);
 }
+
 a:active {
   transform: scale(1);
 }

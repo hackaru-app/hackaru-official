@@ -24,13 +24,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .latest-news {
   border-bottom: 1px solid #2e3647;
   font-size: 14px;
   padding: 10px 0;
   text-align: center;
 }
+
 .news-icon {
   margin-right: 10px;
 }

@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .feature {
   align-items: center;
   border-bottom: 1px #0001 solid;
@@ -33,15 +33,18 @@ export default {
   padding: 100px 0;
   width: 100%;
 }
+
 .feature .description {
   display: flex;
   flex-direction: column;
   margin-right: 50px;
   width: 420px;
 }
+
 .feature.reverse .description {
   order: 2;
 }
+
 .feature img {
   border-radius: 5px;
   flex-shrink: 0;
@@ -50,10 +53,12 @@ export default {
   max-width: 560px;
   width: auto;
 }
+
 .feature.reverse img {
   margin-right: 50px;
   order: 1;
 }
+
 .feature h1 {
   border-bottom: 1px #ffd96a solid;
   color: #fff;
@@ -62,10 +67,12 @@ export default {
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
+
 .feature p {
   color: #cdd0d1;
   line-height: 1.5;
 }
+
 @media screen and (max-width: 1024px) {
   .feature {
     box-sizing: border-box;
@@ -74,10 +81,12 @@ export default {
     padding: 30px;
     width: 100%;
   }
+
   .feature.reverse img {
     margin-right: 0;
     order: 2;
   }
+
   .feature .description {
     margin: 0;
     margin-bottom: 40px;
@@ -85,16 +94,19 @@ export default {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 640px) {
   .feature h1 {
     font-size: 28px;
   }
+
   .feature .description {
     margin: 0;
     margin-bottom: 40px;
     text-align: center;
     width: 100%;
   }
+
   .feature img {
     width: 300px !important;
   }
