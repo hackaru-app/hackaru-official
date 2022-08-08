@@ -13,7 +13,7 @@
     "prettier": "prettier --ignore-path .gitignore"
   },
   "dependencies": {
-    "cookie-universal-nuxt": "^2.2.1",
+    "cookie-universal-nuxt": "^2.2.2",
     "cross-env": "^7.0.2",
     "date-fns": "^2.29.1",
     "hh-mm-ss": "^1.2.0",
